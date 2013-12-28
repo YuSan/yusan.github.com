@@ -1,6 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://YuSan.github.io/blog/2013/11/24/first-blog/</loc>
+        <lastmod>2013-12-28T22:00:17+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://YuSan.github.io/blog/2013/12/02/linux-shell-use-and-skill/</loc>
+        <lastmod>2013-12-28T22:00:17+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://YuSan.github.io/blog/2013/12/10/zai-duo-tai-ji-zi-shang-xie-octopressbo-ke/
+        </loc>
+        <lastmod>2013-12-28T22:00:17+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://YuSan.github.io/blog/2013/12/14/galapad-s6-lewa-os5/</loc>
+        <lastmod>2013-12-28T22:00:17+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://YuSan.github.io/blog/2013/12/28/galapad-s6-lewa-os5-12-dot-27/</loc>
+        <lastmod>2013-12-28T22:00:17+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://YuSan.github.io/about/</loc>
+        <lastmod>2013-12-28T21:48:53+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://YuSan.github.io/blog/archives/</loc>
         <lastmod>2013-12-28T21:48:53+08:00</lastmod>
     </url>
@@ -10,6 +36,10 @@
     </url>
     <url>
         <loc>http://YuSan.github.io/</loc>
+        <lastmod>2013-12-28T21:48:53+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://YuSan.github.io/404.html</loc>
         <lastmod>2013-12-28T21:48:53+08:00</lastmod>
     </url>
 </urlset>
