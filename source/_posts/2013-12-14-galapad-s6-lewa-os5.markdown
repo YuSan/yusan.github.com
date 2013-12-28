@@ -30,8 +30,8 @@ categories: Rom GALAPAD_S6 LeWa-OS5
 
 【ROM截图】
 -----------------
-![](http://i.imgur.com/QvMErWn.jpg)
-![](http://i.imgur.com/EC9Mc6h.png)
+![](http://image15-c.poco.cn/mypoco/myphoto/20131228/22/17421244620131228221653020.png)
+![](http://image15-c.poco.cn/mypoco/myphoto/20131228/22/17421244620131228221721031.png)
 
 【刷机前事项】
 ----------------
