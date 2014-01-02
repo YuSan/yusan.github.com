@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "影驰S6_LeWa-OS5_1227更新"
-date: 2013-12-28 08:14
+title: "影驰S6(GALAPAD_S6) 百度云炫5.1"
+date: 2014-01-02 20:39:07 +0800
 comments: true
-categories: Rom GALAPAD_S6 LeWa-OS5
+categories: Rom GALAPAD_S6 BaiDuYun
 ---
 ---
 【刷机教程】
@@ -23,16 +23,17 @@ categories: Rom GALAPAD_S6 LeWa-OS5
 
 【ROM说明】
 -----------------
-- 基于乐蛙最新开发版进行移植；
+- 基于正式版百度云炫5.1进行移植；
 - 功能基本正常，WIFI,蓝牙,相机,通讯,声音等；
 - 个人测试未发现明显bug，如使用过程中发现bug请理性反馈，勿喷，谢谢！
 - 此ROM为本人移植发布，转载修改请注明出处，请尊重作者的劳动成果！
 
 【ROM截图】
 -----------------
-![](http://ntu.me/di/JPGPE/Screenshot_2013-12-28-01-30-46.png)
-![](http://ntu.me/di/BEIYX/Screenshot_2013-12-28-08-07-11.png)
-![](http://ntu.me/di/EP03T/Screenshot_2013-12-28-01-31-05.png)
+![](http://ntu.me/di/W2Z23/2.png)
+![](http://ntu.me/di/15RF3/3.png)
+![](http://ntu.me/di/QKXQ9/5.png)
+![](http://ntu.me/di/TJVHD/4.png)
 
 【刷机前事项】
 ----------------
@@ -61,4 +62,4 @@ PS: 刷机后，第一次开机一般都比较慢(2-3分钟)，请耐心等待�
 
 【ROM下载】
 -----------------
-[点我下载](http://pan.baidu.com/s/1ntv1xrj)
+[点我下载](http://pan.baidu.com/s/1qWJcaU4)
