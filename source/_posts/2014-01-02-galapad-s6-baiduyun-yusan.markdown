@@ -62,4 +62,4 @@ PS: 刷机后，第一次开机一般都比较慢(2-3分钟)，请耐心等待�
 
 【ROM下载】
 -----------------
-[点我下载](http://pan.baidu.com/s/1qWJcaU4)
+[点我下载](https://s.yunio.com/YTh0FC)
