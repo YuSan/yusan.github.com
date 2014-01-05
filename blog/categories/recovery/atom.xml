@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Recovery | YuSan's Blog]]></title>
   <link href="http://YuSan.github.io/blog/categories/recovery/atom.xml" rel="self"/>
   <link href="http://YuSan.github.io/"/>
-  <updated>2014-01-05T21:13:21+08:00</updated>
+  <updated>2014-01-05T21:18:04+08:00</updated>
   <id>http://YuSan.github.io/</id>
   <author>
     <name><![CDATA[雨伞先生]]></name>
@@ -20,30 +20,35 @@
     <id>http://YuSan.github.io/blog/2014/01/05/galapad-s6-recovery-cn</id>
     <content type="html"><![CDATA[<hr />
 
-<h2>免责声明:</h2>
+<h2>【免责申明】:</h2>
 
 <ul>
 <li>本Recovery已在机器测试通过,纯属个人兴趣自制,非官方recovery；</li>
 <li>请务必保证电池电量在60％以上并保证刷机过程中电脑不会断电；</li>
-<li>刷机有风险，请仔细阅读相关的刷机教程并自行承担刷机风险，本人不对任何刷机失败承担任何责任；</li>
-<li>如果您在此recovery的基础上修复了某些尚未发现的Bug，并提出改善建议，建议继续公开和分享您的工作成果；</li>
-<li>本人特此申明对recovery之使用不提供任何保证，不对任何用户保证本recovery的适用性，不保证无故障产生；亦不对任何用     户使用此recovery所遭遇到的任何理论上的或实际上的损失承担责任；</li>
-<li>刷此recovery引起的保修失效、变砖等问题不在此recovery发布人可以解决的问题范围之内；</li>
-<li>如果您使用本recovery，即表示已经默认接受了此协议 .</li>
 </ul>
 
 
 <!--more-->
 
 
-<h2>鸣谢：</h2>
+<ul>
+<li>刷机有风险，请仔细阅读相关的刷机教程并自行承担刷机风险，本人不对任何刷机失败承担任何责任；</li>
+<li>如果您在此recovery的基础上修复了某些尚未发现的Bug，并提出改善建议，建议继续公开和分享您的工作成果；</li>
+<li>本人特此申明对recovery之使用不提供任何保证，不对任何用户保证本recovery的适用性，不保证无故障产生；亦不对任何用     户使用此recovery所遭遇到的任何理论上的或实际上的损失承担责任；</li>
+<li>刷此recovery引起的保修失效、变砖等问题不在此recovery发布人可以解决的问题范围之内；</li>
+<li>如果您使用本recovery，即表示已经默认接受了此协议 .
+【鸣谢】：</li>
+</ul>
+
+
+<hr />
 
 <ul>
 <li>感谢大神们在github上无偿贡献的代码；</li>
 </ul>
 
 
-<h2>功能简介：</h2>
+<h2>【功能简介】：</h2>
 
 <blockquote><p>1.基于CWM_Recovery6037源码编制作，并完全汉化 ;</p>
 
@@ -61,11 +66,11 @@
 
 <p>8.支持官方OTA升级，支持刷入官方包！</p></blockquote>
 
-<h2>图片展示：</h2>
+<h2>【图片展示】：</h2>
 
 <p><img src="http://ntu.me/di/1ZJ41/01.jpg" alt="" /></p>
 
-<h2>下载：</h2>
+<h2>【下载】：</h2>
 
 <p><a href="http://pan.baidu.com/s/1hqeGPFm">点我下载</a></p>
 ]]></content>
