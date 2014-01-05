@@ -4,7 +4,7 @@
   <title><![CDATA[YuSan's Blog]]></title>
   <link href="http://YuSan.github.io/atom.xml" rel="self"/>
   <link href="http://YuSan.github.io/"/>
-  <updated>2014-01-05T20:38:54+08:00</updated>
+  <updated>2014-01-05T21:06:43+08:00</updated>
   <id>http://YuSan.github.io/</id>
   <author>
     <name><![CDATA[雨伞先生]]></name>
@@ -12,6 +12,61 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[GALAPAD_S6 中文恢复系统(cwm-Recovery)]]></title>
+    <link href="http://YuSan.github.io/blog/2014/01/05/galapad-s6-recovery-cn/"/>
+    <updated>2014-01-05T20:51:20+08:00</updated>
+    <id>http://YuSan.github.io/blog/2014/01/05/galapad-s6-recovery-cn</id>
+    <content type="html"><![CDATA[<hr />
+
+<h2>免责声明:</h2>
+
+<ul>
+<li>本Recovery已在机器测试通过,纯属个人兴趣自制,非官方recovery；</li>
+<li>请务必保证电池电量在60％以上并保证刷机过程中电脑不会断电；</li>
+<li>刷机有风险，请仔细阅读相关的刷机教程并自行承担刷机风险，本人不对任何刷机失败承担任何责任；</li>
+<li>如果您在此recovery的基础上修复了某些尚未发现的Bug，并提出改善建议，建议继续公开和分享您的工作成果；</li>
+<li>本人特此申明对recovery之使用不提供任何保证，不对任何用户保证本recovery的适用性，不保证无故障产生；亦不对任何用     户使用此recovery所遭遇到的任何理论上的或实际上的损失承担责任；</li>
+<li>刷此recovery引起的保修失效、变砖等问题不在此recovery发布人可以解决的问题范围之内；</li>
+<li>如果您使用本recovery，即表示已经默认接受了此协议 .</li>
+</ul>
+
+
+<h2>鸣谢：</h2>
+
+<ul>
+<li>感谢大神们在github上无偿贡献的代码；</li>
+</ul>
+
+
+<h2>功能简介：</h2>
+
+<blockquote><p>1.基于CWM_Recovery6037源码编制作，并完全汉化 ;</p>
+
+<p>2.采用全新汉化字库，大字体，界面更清晰；</p>
+
+<p>3.完美支持 ADB Sideload 命令推送刷机包；</p>
+
+<p>4.完美支持备份和恢复系统（支持tar、dup、tgz三种备份格式，都可完全恢复）</p>
+
+<p>5.支持挂载U盘</p>
+
+<p>6.支持开启彩虹界面（从上到下按5次可开启或关闭彩虹模式）</p>
+
+<p>7.支持时间及电池电量显示</p>
+
+<p>8.支持官方OTA升级，支持刷入官方包！</p></blockquote>
+
+<h2>图片展示：</h2>
+
+<p><img src="http://ntu.me/di/1ZJ41/01.jpg" alt="" /></p>
+
+<h2>下载：</h2>
+
+<p><a href="http://pan.baidu.com/s/1hqeGPFm">点我下载</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[影驰S6_LeWa-OS5_14.01.03更新]]></title>
@@ -756,7 +811,7 @@ EOF</p></blockquote>
 
 <h4>设置git email:</h4>
 
-<blockquote><p>git config &mdash;global user.email &ldquo;<a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#58;&#x6d;&#101;&#64;&#101;&#x78;&#x61;&#x6d;&#x70;&#108;&#101;&#46;&#x63;&#111;&#x6d;">&#109;&#x65;&#x40;&#x65;&#x78;&#97;&#109;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#x6d;</a>&rdquo;</p></blockquote>
+<blockquote><p>git config &mdash;global user.email &ldquo;<a href="&#x6d;&#97;&#x69;&#108;&#116;&#111;&#x3a;&#x6d;&#x65;&#x40;&#x65;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#x2e;&#x63;&#111;&#109;">&#109;&#101;&#x40;&#x65;&#120;&#97;&#109;&#112;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#109;</a>&rdquo;</p></blockquote>
 
 <h4>To sync with master if you have unpublished commits:</h4>
 
