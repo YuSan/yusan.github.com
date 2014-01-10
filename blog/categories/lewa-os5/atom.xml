@@ -4,7 +4,7 @@
   <title><![CDATA[Category: LeWa-OS5 | YuSan's Blog]]></title>
   <link href="http://YuSan.github.io/blog/categories/lewa-os5/atom.xml" rel="self"/>
   <link href="http://YuSan.github.io/"/>
-  <updated>2014-01-10T22:03:34+08:00</updated>
+  <updated>2014-01-10T22:48:41+08:00</updated>
   <id>http://YuSan.github.io/</id>
   <author>
     <name><![CDATA[雨伞先生]]></name>
@@ -53,12 +53,18 @@
 <h2>【ROM说明】</h2>
 
 <ul>
-<li>基于乐蛙最新开发版进行移植；</li>
+<li>基于乐蛙OS5进行移植（不是最新版，等有时间再更新吧）；</li>
 <li>功能基本正常，WIFI,蓝牙,相机,通讯,声音等；</li>
 <li>个人测试未发现明显bug，如使用过程中发现bug请理性反馈，勿喷，谢谢！</li>
 <li>此ROM为本人移植发布，转载修改请注明出处，请尊重作者的劳动成果！</li>
 </ul>
 
+
+<h2>【已知Bug】</h2>
+
+<p><code>javascript
+自带相机最大像素只能到600W，但是清晰度还是可以接受的，第三方相机可识别800W！
+</code></p>
 
 <h2>【ROM截图】</h2>
 
