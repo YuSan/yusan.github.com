@@ -6,7 +6,7 @@ comments: true
 categories: GALAPAD_S6 Recovery
 ---
 ---
-免责声明:
+【免责申明】:
 ---------
 * 本Recovery已在机器测试通过,纯属个人兴趣自制,非官方recovery；
 *  请务必保证电池电量在60％以上并保证刷机过程中电脑不会断电；
@@ -16,12 +16,11 @@ categories: GALAPAD_S6 Recovery
 * 本人特此申明对recovery之使用不提供任何保证，不对任何用户保证本recovery的适用性，不保证无故障产生；亦不对任何用     户使用此recovery所遭遇到的任何理论上的或实际上的损失承担责任；
 * 刷此recovery引起的保修失效、变砖等问题不在此recovery发布人可以解决的问题范围之内；
 * 如果您使用本recovery，即表示已经默认接受了此协议 .
-
-鸣谢：
+【鸣谢】：
 ---------
 * 感谢大神们在github上无偿贡献的代码；
 
-功能简介：
+【功能简介】：
 ---------
 > 1.基于CWM_Recovery6037源码编制作，并完全汉化 ;
 
@@ -39,10 +38,10 @@ categories: GALAPAD_S6 Recovery
 
 > 8.支持官方OTA升级，支持刷入官方包！
 
-图片展示：
+【图片展示】：
 ---------
 ![](http://ntu.me/di/1ZJ41/01.jpg)
 
-下载：
+【下载】：
 ---------
 [点我下载](http://pan.baidu.com/s/1hqeGPFm)
