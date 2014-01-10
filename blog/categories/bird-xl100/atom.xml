@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: MIUI_V5 | YuSan's Blog]]></title>
-  <link href="http://YuSan.github.io/blog/categories/miui-v5/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Bird_XL100 | YuSan's Blog]]></title>
+  <link href="http://YuSan.github.io/blog/categories/bird-xl100/atom.xml" rel="self"/>
   <link href="http://YuSan.github.io/"/>
   <updated>2014-01-10T22:03:34+08:00</updated>
   <id>http://YuSan.github.io/</id>
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[影驰S6(GALAPAD_S6) MIUI_V5]]></title>
-    <link href="http://YuSan.github.io/blog/2014/01/02/galapad-s6-miui-yusan/"/>
-    <updated>2014-01-02T22:26:23+08:00</updated>
-    <id>http://YuSan.github.io/blog/2014/01/02/galapad-s6-miui-yusan</id>
+    <title type="html"><![CDATA[波导枭龙HD（Bird XL100） LeWa-OS5]]></title>
+    <link href="http://YuSan.github.io/blog/2014/01/10/bird-xl100-lewa-os5/"/>
+    <updated>2014-01-10T21:37:43+08:00</updated>
+    <id>http://YuSan.github.io/blog/2014/01/10/bird-xl100-lewa-os5</id>
     <content type="html"><![CDATA[<hr />
 
 <h2>【刷机教程】</h2>
@@ -53,7 +53,7 @@
 <h2>【ROM说明】</h2>
 
 <ul>
-<li>基于红米最新5.0稳定版进行移植；</li>
+<li>基于乐蛙最新开发版进行移植；</li>
 <li>功能基本正常，WIFI,蓝牙,相机,通讯,声音等；</li>
 <li>个人测试未发现明显bug，如使用过程中发现bug请理性反馈，勿喷，谢谢！</li>
 <li>此ROM为本人移植发布，转载修改请注明出处，请尊重作者的劳动成果！</li>
@@ -62,10 +62,10 @@
 
 <h2>【ROM截图】</h2>
 
-<p><img src="http://ntu.me/di/A3S93/Screenshot_2013-01-03-00-16-27.jpg" alt="" />
-<img src="http://ntu.me/di/HG7H7/Screenshot_2013-01-03-00-16-33.png" alt="" />
-<img src="http://ntu.me/di/356CK/Screenshot_2013-01-03-00-17-54.png" alt="" />
-<img src="http://ntu.me/di/2JHLP/Screenshot_2013-01-03-00-16-53.png" alt="" /></p>
+<p><img src="http://ntu.me/di/UVT7V/Screenshot_2014-01-07-21-56-29.png" alt="" />
+<img src="http://ntu.me/di/6BG3P/Screenshot_2014-01-07-21-46-47.jpg" alt="" />
+<img src="http://ntu.me/di/08RRT/Screenshot_2014-01-07-21-47-44.png" alt="" />
+<img src="http://ntu.me/di/RIJFU/Screenshot_2014-01-07-21-48-41.png" alt="" /></p>
 
 <h2>【刷机前事项】</h2>
 
@@ -103,7 +103,7 @@
 
 <h2>【ROM下载】</h2>
 
-<p><a href="http://pan.baidu.com/s/1o6LNUVC">点我下载</a></p>
+<p><a href="http://pan.baidu.com/s/1kTr1Y31">点我下载</a></p>
 ]]></content>
   </entry>
   
