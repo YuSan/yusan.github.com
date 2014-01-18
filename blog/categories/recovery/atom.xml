@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Recovery | YuSan's Blog]]></title>
   <link href="http://YuSan.github.io/blog/categories/recovery/atom.xml" rel="self"/>
   <link href="http://YuSan.github.io/"/>
-  <updated>2014-01-19T00:26:45+08:00</updated>
+  <updated>2014-01-19T03:43:10+08:00</updated>
   <id>http://YuSan.github.io/</id>
   <author>
     <name><![CDATA[雨伞先生]]></name>
@@ -24,46 +24,57 @@
 
 <p>此教程是用来指导刷入波导枭龙HD（Bird XL100）第三方Recovery的教程，因为阿里云系统的缘故，貌似目前只有这种方式可以成功刷入Recovery。</p>
 
+<!--more-->
+
+
 <p><strong><strong>请认真看帖子，看清每一步再进行操作，否则出错一律不负责。</strong></strong></p>
 
-<p>【第一步】</p>
+<h2>【第一步】</h2>
 
-<blockquote><p>1、下载MTK线刷联机驱动 ，附上下载地址：
-链接:  点我下载   密码: iw6v</p></blockquote>
+<ol>
+<li><p>下载MTK线刷联机驱动 ，附上下载地址：<br/>
+链接:  <a href="http://pan.baidu.com/s/1EKwCi">点我下载</a>   密码: <code>iw6v</code></p></li>
+<li><p>解压驱动文件，并安装。如下图：
+<img src="http://bbs.cn314.com/data/attachment/forum/201309/14/124055m3zj2jhaca213bn9.png" alt="" /></p></li>
+</ol>
 
-<p>2、解压驱动文件，并安装。如下图：</p>
 
-<p>第二步：
-1、下载线刷工具 SP_Flash_Tool （注意：此工具为MT6582专用，其它线刷工具用不了，请务必从以下地址下载！），附上下载地址：
-本帖隐藏的内容
-链接:   点我下载    密码: aarh</p>
+<h2>第二步：</h2>
 
-<p>2、解压工具到任意文件夹；</p>
+<ol>
+<li><p>下载线刷工具 SP_Flash_Tool （注意：此工具为MT6582专用，其它线刷工具用不了，请务必从以下地址下载！），附上下载地址：<br/>
+链接:   <a href="http://pan.baidu.com/s/1d6Ete">点我下载</a>    密码: <code>aarh</code></p></li>
+<li><p>解压工具到任意文件夹；
+<img src="http://bbs.cn314.com/data/attachment/forum/201309/14/124059b5l5elwhfpxw3ttl.png" alt="" /></p></li>
+<li><p>双击运行SP_Flash_Tool.exe（注意：此时不要将手机连接到电脑）
+<img src="http://bbs.cn314.com/data/attachment/forum/201312/18/210704lomptyhodhizvl8e.png" alt="" /></p></li>
+<li><p>点击 Scatter-loading 按钮选择 Scatter 文件（scatter文件下载： <a href="http://bbs.cn314.com/forum.php?mod=attachment&amp;aid=MjcxNTEyfGJlZGU0Njc2fDEzOTAwNjM2Njl8MjI4MzY2fDE5MjcwNA%3D%3D">MT6582_Android_scatter.txt</a>)
+<img src="http://bbs.cn314.com/data/attachment/forum/201312/18/205828ha92vlrfj09r92ja.jpg" alt="" /></p></li>
+<li><p>在上方选项中选择window，然后点击勾选“Write Memory”；
+<img src="http://bbs.cn314.com/data/attachment/forum/201312/18/205828vv77gvr1z47xgyxn.jpg" alt="" /></p></li>
+<li><p>上一步执行完成之后会多出一个选项卡——“Write Memory”。选择它，然后按下图操作：</p>
 
-<p>3、双击运行SP_Flash_Tool.exe（注意：此时不要将手机连接到电脑）</p>
+<blockquote><ul>
+<li>1）、Open Raw Data；</li>
+<li>2）、选择下载的Recovery文件</li>
+<li>3）、点击“打开”，即选择了Recovery文件，然后看看“File Path”确保文件路径正确；</li>
+<li>4）、在“Memory Setting”选择“emmc”；</li>
+<li>5）、在下面的两个框输入16进制的起始地址和长度，两个框内的数据分别为：（此处必须填写正确！可在下面复制）<br/>
+<code>Begin Address：  0x0000000002980000</code><br/>
+<code>Container Length： 0x00600000</code></li>
+</ul>
+</blockquote></li>
+</ol>
 
-<p>4、点击 Scatter-loading 按钮选择 Scatter 文件（scatter文件下载： MT6582_Android_scatter.txt (7.47 KB, 下载次数: 193) ）；</p>
 
-<p>5、在上方选项中选择window，然后点击勾选“Write Memory”；</p>
+<p><img src="http://bbs.cn314.com/data/attachment/forum/201312/18/205828c76di16f5rc6thzy.jpg" alt="" /></p>
 
-<p>6、上一步执行完成之后会多出一个选项卡——“Write Memory”。选择它，然后按下图操作：
-1）、Open Raw Data；
-2）、选择下载的Recovery文件
-3）、点击“打开”，即选择了Recovery文件，然后看看“File Path”确保文件路径正确；
-4）、在“Memory Setting”选择“emmc”；
-5）、在下面的两个框输入16进制的起始地址和长度，两个框内的数据分别为：（此处必须填写正确！可在下面复制）</p>
+<p>7.点击工具上方的 第二个按钮“Write Memory ” 按钮，并将手机关机连接到电脑  ,等待进度条走完，出现绿色圆圈即可；
+<img src="http://bbs.cn314.com/data/attachment/forum/201312/18/205827r5ollmj6667994f9.jpg" alt="" /></p>
 
-<pre><code>Begin Address：  0x0000000002980000
-Container Length： 0x00600000
-</code></pre>
+<p>8.刷入完成，拔掉数据线。如果需要进入 Recovery 模式，按住“音量+”和“电源键”，并选择 &ldquo;Recovery mode&rdquo; 即可。</p>
 
-<p>复制代码</p>
-
-<p>7、点击工具上方的 第二个按钮“Write Memory ” 按钮，并将手机关机连接到电脑  ,等待进度条走完，出现绿色圆圈即可；</p>
-
-<p>8、刷入完成，拔掉数据线。如果需要进入 Recovery 模式，按住“音量+”和“电源键”，并选择 &ldquo;Recovery mode&rdquo; 即可。</p>
-
-<p>好了，教程到此结束！如果在手机关机连接到电脑之后，工具未出现进度条，手机进入充电，那么请回到第一步重新安装联机驱动。</p>
+<p><strong>好了，教程到此结束！如果在手机关机连接到电脑之后，工具未出现进度条，手机进入充电，那么请回到第一步重新安装联机驱动。</strong></p>
 ]]></content>
   </entry>
   
