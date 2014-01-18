@@ -4,7 +4,7 @@
   <title><![CDATA[YuSan's Blog]]></title>
   <link href="http://YuSan.github.io/atom.xml" rel="self"/>
   <link href="http://YuSan.github.io/"/>
-  <updated>2014-01-10T22:48:41+08:00</updated>
+  <updated>2014-01-19T00:26:45+08:00</updated>
   <id>http://YuSan.github.io/</id>
   <author>
     <name><![CDATA[雨伞先生]]></name>
@@ -12,6 +12,155 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[影驰S6_LeWa-OS5_14.01.17完美版更新]]></title>
+    <link href="http://YuSan.github.io/blog/2014/01/18/galapad-s6-lewa-140117/"/>
+    <updated>2014-01-18T23:58:54+08:00</updated>
+    <id>http://YuSan.github.io/blog/2014/01/18/galapad-s6-lewa-140117</id>
+    <content type="html"><![CDATA[<hr />
+
+<h2>【刷机教程】</h2>
+
+<ul>
+<li><ol>
+<li>刷机前请先通过豌豆荚或者91手机助手备份好手机上的资料，以免资料丢失！</li>
+</ol>
+</li>
+<li><ol>
+<li>严格按照刷机指导书操作</li>
+</ol>
+</li>
+</ul>
+
+
+<!--more-->
+
+
+<h2>【免责申明】</h2>
+
+<ul>
+<li>1）请务必保证电池电量在60％以上并保证刷机过程中电脑或者手机不会断电；</li>
+<li>2）将此固件使用在其它机型导致的问题,本人及云卓论坛将不负担任何责任</li>
+<li>3）刷机有风险，请仔细阅读相关的刷机教程并自行承担刷机风险，普通用户建议至当地维修站进行升级，本人不对任何刷机失败承担任何责任；</li>
+<li>4）本人未持有 ROM 及其中的软件的版权，请以研究和学习为目的，合法使用。</li>
+<li>5）如果您在此Rom的基础上修复了某些尚未发现的Bug，并提出改善建议，建议继续公开和分享您的研究成果；</li>
+<li>6）本人特此申明对 ROM 之使用不提供任何保证，不对任何用户保证本 ROM 的适用性，不保证无故障产生；亦不对任何用户使用此 ROM 所遭遇到的任何理论上的或实际上的损失承担责任。</li>
+<li>7）如果您使用本软件，即表示已经默认接受了此协议。</li>
+</ul>
+
+
+<h2>【ROM说明】</h2>
+
+<ul>
+<li>基于乐蛙最新完美版进行移植；</li>
+<li>功能基本正常，WIFI,蓝牙,相机,通讯,声音等；</li>
+<li>个人测试未发现明显bug，如使用过程中发现bug请理性反馈，勿喷，谢谢！</li>
+<li>此ROM为本人移植发布，转载修改请注明出处，请尊重作者的劳动成果！</li>
+</ul>
+
+
+<h2>【ROM截图】</h2>
+
+<p><img src="http://ntu.me/di/TOV67/Screenshot_2014-01-18-23-55-23.png" alt="" />
+<img src="http://ntu.me/di/MXT08/Screenshot_2014-01-18-23-52-18.png" alt="" />
+<img src="http://ntu.me/di/QQLC5/Screenshot_2014-01-18-23-52-08.png" alt="" />
+<img src="http://ntu.me/di/O4OCR/Screenshot_2014-01-18-23-54-48.png" alt="" />
+<img src="http://ntu.me/di/SMY0N/3c66d9ac-b218-44ff-a22b-d4eaee95ea41wallpaper.jpg" alt="" /></p>
+
+<h2>【刷机前事项】</h2>
+
+<ul>
+<li>本ROM为Recovery卡刷包，需要第三方recovery支持</li>
+<li>需要备份自己机器的原版系统的童鞋，可以在刷机前使用Recovery备份自己的原有系统</li>
+</ul>
+
+
+<h2>【刷机教程】</h2>
+
+<blockquote><ol>
+<li>将下载下来的XXX.zip 刷机包不要解压，拷贝到你的手机的SD卡上（也可已放到内置SD卡）</li>
+<li>一直按住音量上+电源按钮开机，不要松开，直到进入 recovery模式</li>
+<li>选择“清空所有数据”和“清空缓存”</li>
+<li>选择“从SD卡选择刷机包”</li>
+<li>再选“从SD卡选择ZIP文件”（如果你的刷机包放在内置SD卡，则选择从内置SD卡选择刷机包）</li>
+<li>再找到刚下载的zip格式刷机包确认</li>
+<li>确认后，刷机开始，稍等1分钟左右，完成。</li>
+<li>刷完后，返回首菜单，选择“立即重启系统”重启手机.</li>
+<li>刷机完成，手机开机较慢，请耐心等待。</li>
+</ol>
+</blockquote>
+
+<hr />
+
+<p>PS: 刷机后，第一次开机一般都比较慢(2-3分钟)，请耐心等待。 进入桌面设置完基本参数、恢复数据后，建议重启一次手机，可以很大改善系统速度。</p>
+
+<ul>
+<li>建议使用优质、高速的TF卡，确保文件完整。</li>
+<li>请不要任意改变升级包内容，否则变砖。</li>
+<li>升级前请注意保证电池有充足的电量。</li>
+</ul>
+
+
+<h2>【ROM下载】</h2>
+
+<p><a href="http://pan.baidu.com/s/1sj1zwpn">点我下载</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[波导枭龙HD(XL100)线刷第三方Recovery超详细图文教程]]></title>
+    <link href="http://YuSan.github.io/blog/2014/01/10/bird-xl100-flash-recovery-method/"/>
+    <updated>2014-01-10T22:53:44+08:00</updated>
+    <id>http://YuSan.github.io/blog/2014/01/10/bird-xl100-flash-recovery-method</id>
+    <content type="html"><![CDATA[<hr />
+
+<h2>【说明】</h2>
+
+<p>此教程是用来指导刷入波导枭龙HD（Bird XL100）第三方Recovery的教程，因为阿里云系统的缘故，貌似目前只有这种方式可以成功刷入Recovery。</p>
+
+<p><strong><strong>请认真看帖子，看清每一步再进行操作，否则出错一律不负责。</strong></strong></p>
+
+<p>【第一步】</p>
+
+<blockquote><p>1、下载MTK线刷联机驱动 ，附上下载地址：
+链接:  点我下载   密码: iw6v</p></blockquote>
+
+<p>2、解压驱动文件，并安装。如下图：</p>
+
+<p>第二步：
+1、下载线刷工具 SP_Flash_Tool （注意：此工具为MT6582专用，其它线刷工具用不了，请务必从以下地址下载！），附上下载地址：
+本帖隐藏的内容
+链接:   点我下载    密码: aarh</p>
+
+<p>2、解压工具到任意文件夹；</p>
+
+<p>3、双击运行SP_Flash_Tool.exe（注意：此时不要将手机连接到电脑）</p>
+
+<p>4、点击 Scatter-loading 按钮选择 Scatter 文件（scatter文件下载： MT6582_Android_scatter.txt (7.47 KB, 下载次数: 193) ）；</p>
+
+<p>5、在上方选项中选择window，然后点击勾选“Write Memory”；</p>
+
+<p>6、上一步执行完成之后会多出一个选项卡——“Write Memory”。选择它，然后按下图操作：
+1）、Open Raw Data；
+2）、选择下载的Recovery文件
+3）、点击“打开”，即选择了Recovery文件，然后看看“File Path”确保文件路径正确；
+4）、在“Memory Setting”选择“emmc”；
+5）、在下面的两个框输入16进制的起始地址和长度，两个框内的数据分别为：（此处必须填写正确！可在下面复制）</p>
+
+<pre><code>Begin Address：  0x0000000002980000
+Container Length： 0x00600000
+</code></pre>
+
+<p>复制代码</p>
+
+<p>7、点击工具上方的 第二个按钮“Write Memory ” 按钮，并将手机关机连接到电脑  ,等待进度条走完，出现绿色圆圈即可；</p>
+
+<p>8、刷入完成，拔掉数据线。如果需要进入 Recovery 模式，按住“音量+”和“电源键”，并选择 &ldquo;Recovery mode&rdquo; 即可。</p>
+
+<p>好了，教程到此结束！如果在手机关机连接到电脑之后，工具未出现进度条，手机进入充电，那么请回到第一步重新安装联机驱动。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[波导枭龙HD（Bird XL100）中文恢复系统(cwm-Recovery)]]></title>
@@ -981,7 +1130,7 @@ EOF</p></blockquote>
 
 <h4>设置git email:</h4>
 
-<blockquote><p>git config &mdash;global user.email &ldquo;<a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#x3a;&#109;&#101;&#64;&#101;&#120;&#x61;&#109;&#x70;&#108;&#x65;&#x2e;&#x63;&#111;&#109;">&#x6d;&#101;&#64;&#x65;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#x2e;&#x63;&#111;&#x6d;</a>&rdquo;</p></blockquote>
+<blockquote><p>git config &mdash;global user.email &ldquo;<a href="&#109;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#x6d;&#x65;&#x40;&#101;&#x78;&#x61;&#109;&#112;&#108;&#x65;&#x2e;&#99;&#111;&#109;">&#x6d;&#x65;&#x40;&#101;&#x78;&#97;&#109;&#112;&#x6c;&#x65;&#46;&#99;&#111;&#109;</a>&rdquo;</p></blockquote>
 
 <h4>To sync with master if you have unpublished commits:</h4>
 

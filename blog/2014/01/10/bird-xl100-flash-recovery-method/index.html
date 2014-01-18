@@ -5,13 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - YuSan's Blog</title>
+  <title>波导枭龙HD(XL100)线刷第三方Recovery超详细图文教程 - YuSan's Blog</title>
   <meta name="author" content="雨伞先生">
 
   
-  <meta name="description" content="Blog Archive 2014 影驰S6_LeWa-OS5_14.01.17完美版更新
-Jan 18 2014 posted in GALAPAD_S6, LeWa-OS5, Rom 波导枭龙HD(XL100)线刷第三方Recovery超详细图文教程
-Jan 10 2014 posted &hellip;">
+  <meta name="description" content="【说明】 此教程是用来指导刷入波导枭龙HD（Bird XL100）第三方Recovery的教程，因为阿里云系统的缘故，貌似目前只有这种方式可以成功刷入Recovery。 请认真看帖子，看清每一步再进行操作，否则出错一律不负责。 【第一步】 1、下载MTK线刷联机驱动 ，附上下载地址：
+链接: &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +19,7 @@ Jan 10 2014 posted &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://YuSan.github.io/blog/archives">
+  <link rel="canonical" href="http://YuSan.github.io/blog/2014/01/10/bird-xl100-flash-recovery-method">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="YuSan's Blog" type="application/atom+xml">
@@ -79,203 +78,184 @@ Jan 10 2014 posted &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">波导枭龙HD(XL100)线刷第三方Recovery超详细图文教程</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-10T22:53:44+08:00" pubdate data-updated="true">Jan 10<span>th</span>, 2014</time>
+        
+	
+         | <a href="#comments">Comments</a>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><hr />
 
-  
-  <h2>2014</h2>
+<h2>【说明】</h2>
 
-<article>
-  
-<h1><a href="/blog/2014/01/18/galapad-s6-lewa-140117/">影驰S6_LeWa-OS5_14.01.17完美版更新</a></h1>
-<time datetime="2014-01-18T23:58:54+08:00" pubdate><span class='month'>Jan</span> <span class='day'>18</span> <span class='year'>2014</span></time>
+<p>此教程是用来指导刷入波导枭龙HD（Bird XL100）第三方Recovery的教程，因为阿里云系统的缘故，貌似目前只有这种方式可以成功刷入Recovery。</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/galapad-s6/'>GALAPAD_S6</a>, <a class='category' href='/blog/categories/lewa-os5/'>LeWa-OS5</a>, <a class='category' href='/blog/categories/rom/'>Rom</a></span>
-</footer>
+<p><strong><strong>请认真看帖子，看清每一步再进行操作，否则出错一律不负责。</strong></strong></p>
 
+<p>【第一步】</p>
 
-</article>
+<blockquote><p>1、下载MTK线刷联机驱动 ，附上下载地址：
+链接:  点我下载   密码: iw6v</p></blockquote>
 
+<p>2、解压驱动文件，并安装。如下图：</p>
 
+<p>第二步：
+1、下载线刷工具 SP_Flash_Tool （注意：此工具为MT6582专用，其它线刷工具用不了，请务必从以下地址下载！），附上下载地址：
+本帖隐藏的内容
+链接:   点我下载    密码: aarh</p>
 
-<article>
-  
-<h1><a href="/blog/2014/01/10/bird-xl100-flash-recovery-method/">波导枭龙HD(XL100)线刷第三方Recovery超详细图文教程</a></h1>
-<time datetime="2014-01-10T22:53:44+08:00" pubdate><span class='month'>Jan</span> <span class='day'>10</span> <span class='year'>2014</span></time>
+<p>2、解压工具到任意文件夹；</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/bird-xl100/'>Bird_XL100</a>, <a class='category' href='/blog/categories/recovery/'>Recovery</a></span>
-</footer>
+<p>3、双击运行SP_Flash_Tool.exe（注意：此时不要将手机连接到电脑）</p>
 
+<p>4、点击 Scatter-loading 按钮选择 Scatter 文件（scatter文件下载： MT6582_Android_scatter.txt (7.47 KB, 下载次数: 193) ）；</p>
 
-</article>
+<p>5、在上方选项中选择window，然后点击勾选“Write Memory”；</p>
 
+<p>6、上一步执行完成之后会多出一个选项卡——“Write Memory”。选择它，然后按下图操作：
+1）、Open Raw Data；
+2）、选择下载的Recovery文件
+3）、点击“打开”，即选择了Recovery文件，然后看看“File Path”确保文件路径正确；
+4）、在“Memory Setting”选择“emmc”；
+5）、在下面的两个框输入16进制的起始地址和长度，两个框内的数据分别为：（此处必须填写正确！可在下面复制）</p>
 
+<pre><code>Begin Address：  0x0000000002980000
+Container Length： 0x00600000
+</code></pre>
 
-<article>
-  
-<h1><a href="/blog/2014/01/10/bird-xl100-cwm-recovery/">波导枭龙HD（Bird XL100）中文恢复系统(cwm-Recovery)</a></h1>
-<time datetime="2014-01-10T22:31:53+08:00" pubdate><span class='month'>Jan</span> <span class='day'>10</span> <span class='year'>2014</span></time>
+<p>复制代码</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/bird-xl100/'>Bird_XL100</a>, <a class='category' href='/blog/categories/recovery/'>Recovery</a></span>
-</footer>
+<p>7、点击工具上方的 第二个按钮“Write Memory ” 按钮，并将手机关机连接到电脑  ,等待进度条走完，出现绿色圆圈即可；</p>
 
+<p>8、刷入完成，拔掉数据线。如果需要进入 Recovery 模式，按住“音量+”和“电源键”，并选择 &ldquo;Recovery mode&rdquo; 即可。</p>
 
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/01/10/bird-xl100-lewa-os5/">波导枭龙HD（Bird XL100） LeWa-OS5</a></h1>
-<time datetime="2014-01-10T21:37:43+08:00" pubdate><span class='month'>Jan</span> <span class='day'>10</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/bird-xl100/'>Bird_XL100</a>, <a class='category' href='/blog/categories/lewa-os5/'>LeWa-OS5</a>, <a class='category' href='/blog/categories/rom/'>Rom</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/01/05/galapad-s6-recovery-cn/">GALAPAD_S6 中文恢复系统(cwm-Recovery)</a></h1>
-<time datetime="2014-01-05T20:51:20+08:00" pubdate><span class='month'>Jan</span> <span class='day'>05</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/galapad-s6/'>GALAPAD_S6</a>, <a class='category' href='/blog/categories/recovery/'>Recovery</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/01/05/galapad-s6-14-dot-1-3-lewa/">影驰S6_LeWa-OS5_14.01.03更新</a></h1>
-<time datetime="2014-01-05T20:34:24+08:00" pubdate><span class='month'>Jan</span> <span class='day'>05</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/galapad-s6/'>GALAPAD_S6</a>, <a class='category' href='/blog/categories/lewa-os5/'>LeWa-OS5</a>, <a class='category' href='/blog/categories/rom/'>Rom</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/01/02/galapad-s6-miui-yusan/">影驰S6(GALAPAD_S6) MIUI_V5</a></h1>
-<time datetime="2014-01-02T22:26:23+08:00" pubdate><span class='month'>Jan</span> <span class='day'>02</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/galapad-s6/'>GALAPAD_S6</a>, <a class='category' href='/blog/categories/miui-v5/'>MIUI_V5</a>, <a class='category' href='/blog/categories/rom/'>Rom</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/01/02/galapad-s6-baiduyun-yusan/">影驰S6(GALAPAD_S6) 百度云炫5.1</a></h1>
-<time datetime="2014-01-02T20:39:07+08:00" pubdate><span class='month'>Jan</span> <span class='day'>02</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/baiduyun/'>BaiDuYun</a>, <a class='category' href='/blog/categories/galapad-s6/'>GALAPAD_S6</a>, <a class='category' href='/blog/categories/rom/'>Rom</a></span>
-</footer>
-
-
-</article>
-
-
-
-  
-  <h2>2013</h2>
-
-<article>
-  
-<h1><a href="/blog/2013/12/28/galapad-s6-lewa-os5-12-dot-27/">影驰S6_LeWa-OS5_1227更新</a></h1>
-<time datetime="2013-12-28T08:14:00+08:00" pubdate><span class='month'>Dec</span> <span class='day'>28</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/galapad-s6/'>GALAPAD_S6</a>, <a class='category' href='/blog/categories/lewa-os5/'>LeWa-OS5</a>, <a class='category' href='/blog/categories/rom/'>Rom</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/12/14/galapad-s6-lewa-os5/">影驰S6（GALAPAD_S6）乐蛙OS5</a></h1>
-<time datetime="2013-12-14T19:22:00+08:00" pubdate><span class='month'>Dec</span> <span class='day'>14</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/galapad-s6/'>GALAPAD_S6</a>, <a class='category' href='/blog/categories/lewa-os5/'>LeWa-OS5</a>, <a class='category' href='/blog/categories/rom/'>Rom</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/12/10/zai-duo-tai-ji-zi-shang-xie-octopressbo-ke/">在多台机子上写octopress博客</a></h1>
-<time datetime="2013-12-10T22:37:00+08:00" pubdate><span class='month'>Dec</span> <span class='day'>10</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/octopress/'>octopress</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/12/02/linux-shell-use-and-skill/">Linux Shell 用法和技巧</a></h1>
-<time datetime="2013-12-02T22:35:00+08:00" pubdate><span class='month'>Dec</span> <span class='day'>02</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/linux/'>Linux</a>, <a class='category' href='/blog/categories/shell/'>Shell</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/11/24/first-blog/">First Blog</a></h1>
-<time datetime="2013-11-24T19:06:00+08:00" pubdate><span class='month'>Nov</span> <span class='day'>24</span> <span class='year'>2013</span></time>
-
-
-</article>
-
+<p>好了，教程到此结束！如果在手机关机连接到电脑之后，工具未出现进度条，手机进入充电，那么请回到第一步重新安装联机驱动。</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">雨伞先生</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-10T22:53:44+08:00" pubdate data-updated="true">Jan 10<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/bird-xl100/'>Bird_XL100</a>, <a class='category' href='/blog/categories/recovery/'>Recovery</a>
+  
+</span>
+
+
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+
+  
+    <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_tsina">新浪微博</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_renren">人人网</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_kaixin001">开心网</a>
+<a class="jiathis_button_weixin">微信</a>
+
+<a href="http://www.jiathis.com/share?uid=1873576" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+	data_track_clickback:true,
+	summary:"",
+	shortUrl:false,
+	hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1873576" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+   
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/01/10/bird-xl100-cwm-recovery/" title="Previous Post: 波导枭龙HD（Bird XL100）中文恢复系统(cwm-Recovery)">&laquo; 波导枭龙HD（Bird XL100）中文恢复系统(cwm-Recovery)</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/01/18/galapad-s6-lewa-140117/" title="Next Post: 影驰S6_LeWa-OS5_14.01.17完美版更新">影驰S6_LeWa-OS5_14.01.17完美版更新 &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
+
+
+  <section>
+    <h1>发表评论</h1>
+    <div id="comments" aria-live="polite"><!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"apar"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->
+</div>
+  </section>
 
 </div>
 
