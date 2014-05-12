@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>在多台机子上写octopress博客 - YuSan's Blog</title>
+  <title>编译Recovery视频教程 - YuSan's Blog</title>
   <meta name="author" content="雨伞先生">
 
   
-  <meta name="description" content="因为电脑装的双系统，有时候需要切换使用，为了方便写博客，在两个系统下面都搞好了环境，可是切换系统之后因为源码不一致，会出错，so，百度之～～ Octopress的git仓库(repository)有两个分支，分别是master和source。
-master存储的是博客网站本身， &hellip;">
+  <meta name="description" content="这个视频貌似是去年在一个朋友的请求之下录的，然后传到网盘分享给他了，之后也忘了～～ 最近电脑硬盘空间有点紧缺，于是整理文件又发现了这个～～
+因为录的源文件是rmvb格式的，居然有1G多，所以下载了格式工厂进行了转码，转为avi格式大小变为了200多M，打开看了一下，清晰度依然很好，完全没有被压缩 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@ master存储的是博客网站本身， &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://YuSan.github.io/blog/2013/12/10/zai-duo-tai-ji-zi-shang-xie-octopressbo-ke">
+  <link rel="canonical" href="http://YuSan.github.io/blog/2014/05/12/compile-recovery">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="YuSan's Blog" type="application/atom+xml">
@@ -82,7 +82,7 @@ master存储的是博客网站本身， &hellip;">
   
   <header>
     
-      <h1 class="entry-title">在多台机子上写octopress博客</h1>
+      <h1 class="entry-title">编译Recovery视频教程</h1>
     
     
       <p class="meta">
@@ -98,7 +98,7 @@ master存储的是博客网站本身， &hellip;">
   
 
 
-<time datetime="2013-12-10T22:37:00+08:00" pubdate data-updated="true">Dec 10<span>th</span>, 2013</time>
+<time datetime="2014-05-12T12:58:35+08:00" pubdate data-updated="true">May 12<span>th</span>, 2014</time>
         
 	
          | <a href="#comments">Comments</a>
@@ -110,35 +110,142 @@ master存储的是博客网站本身， &hellip;">
 
 <div class="entry-content"><hr />
 
-<h4>因为电脑装的双系统，有时候需要切换使用，为了方便写博客，在两个系统下面都搞好了环境，可是切换系统之后因为源码不一致，会出错，so，百度之～～</h4>
+<p><strong>这个视频貌似是去年在一个朋友的请求之下录的，然后传到网盘分享给他了，之后也忘了～～</strong></p>
 
 <!--more-->
 
 
-<ul>
-<li><p>Octopress的git仓库(repository)有两个分支，分别是master和source。</p></li>
-<li><p>master存储的是博客网站本身，而source存储的是生成博客的源文件。</p></li>
-<li><p>master的内容放在根目录的_deploy文件夹内，当你push源文件时会忽略，它使用的是rake deploy命令来更新的。</p></li>
-<li><p>如果几台电脑上面都配置好了Otcopress，要在其中一台上写博客,需要进行同步，更新source仓库即可。更新master并不是必须的，因为更改源文件之后还是需要rake generate，这个时候会自动进行 master更新。</p></li>
-</ul>
+<hr />
 
+<p><strong>最近电脑硬盘空间有点紧缺，于是整理文件又发现了这个～～
+因为录的源文件是rmvb格式的，居然有1G多，所以下载了格式工厂进行了转码，转为avi格式大小变为了200多M，打开看了一下，清晰度依然很好，完全没有被压缩，现在重新上传到百度网盘，分享给有需要的人（也许有人需要吧～～）</strong></p>
+
+<h2>说明：</h2>
+
+<blockquote><p>这里面主要是说recovery编译的，至于前期的如何装系统，装什么系统，怎么配置环境，怎么下载源码等等的请自行百度，网上都有，并且是很详细的教程，甚至是傻瓜式的一键配置脚本等等！</p></blockquote>
+
+<p><strong>里面的文档也贴上来吧～～</strong></p>
+
+<pre><code>微博：weibo.com/APAR （求关注～）
+博客：yusan/github.com  （因为视频是去年录制的，那里面文档上的bolg地址是错的，因为我觉得不好，就把它给废了！）
+</code></pre>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd </span>your_local_octopress_directory
-</span><span class='line'><span class="nb">cd </span>_deploy
-</span><span class='line'>git pull origin master   <span class="c"># update the local master branch </span>
-</span><span class='line'><span class="nb">cd</span> ..
-</span><span class='line'>git pull origin <span class="nb">source</span>   <span class="c"># update the local source branch  </span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'> 1. 同步cm10.1的源码，具体操作请百度之～～
+</span><span class='line'> 2. 打开终端，到源码目录下：
+</span><span class='line'>  <span class="nb">cd </span>Android/cm10.1                   //我的源码目录
+</span><span class='line'> 3. 如果不想使用cm10.1的英文源码，可以按如下操作获取我的recovery汉化源码：（如不需要，请直接下一步！）
+</span><span class='line'>  rm -rf bootable/recovery         //删除原来的cm10.1的recovery源码
+</span><span class='line'>  git clone git@github.com:APAR1992/CWM_Recovery_v6037_cn.git bootable/recovery      //获取我的recovery源码
+</span><span class='line'>    我有源码，就不执行上面这句了，直接复制一下～～
+</span><span class='line'> 4. 获取你的机子的recovery.img（原厂的或者别人编译的也行），具体请自己搞定，线刷包里面有，没有的自己想办法提取，
+</span><span class='line'>  这儿就不说了。为了方便，将名字改为你的机子的型号（eg：G6.img），然后将其放到主目录（~/G6.img）。
+</span><span class='line'>  放到其它目录也行，按自己情况随便放吧。
+</span><span class='line'> 5. 在源码目录执行如下语句生成 otatools ，下一步会用到：
+</span><span class='line'>  make otatools -j4       //注意空格，后面的 -j4 可以视你的电脑配置而定，电脑配置不行就不加或者 -j2 ,
+</span><span class='line'>  电脑配置好点呢就 -j8 或者 -j16 ，你可以试试，不过太大了电脑会卡死～～
+</span><span class='line'>  执行这步可能需要比较长的时间，有可能在1小时左右，请耐心等待（已经编译过的，请直接下一步！）
+</span><span class='line'>  otatools编译完成之后还需要把 out/host/linux-x86/bin 文件夹加入到环境变量中去，这个请百度一下吧，
+</span><span class='line'>  ubuntu直接在主目录下终端执行 gedit .bashrc ,打开修改就行了，网上都有，按情况添加就行了，其他linux版本可能没有
+</span><span class='line'>  ~/.bashrc 文件，可以加到/etc/environment 里面，都是一样的效果
+</span><span class='line'>  完了之后执行  <span class="nb">source</span> .bashrc <span class="o">(</span><span class="nb">source</span> /etc/environment<span class="o">)</span>  使修改生效，重启一下也是可以的～～百度都有，就不详细说了
+</span><span class='line'>
+</span><span class='line'>  我已经有了，所以这一步就不用执行了，跳过～～
+</span><span class='line'>
+</span><span class='line'> 6. 执行如下语句生成你的机型device：
+</span><span class='line'>  ./build/tools/device/mkvendor.sh XiaoCai G6 ~/G6.img      //（cpio: 归档非正常终止 ）不用管，mtk的就这样，不影响编译。
+</span><span class='line'>  请注意命令中的空格，不要打错！！！
+</span><span class='line'>  生成device文件了～～～好像没什么可说的～～
+</span><span class='line'>
+</span><span class='line'> 7. 修改你的机子的device，主要是改BoardConfig.mk ，因为只是编译recovery，所以稍微修改一下就可以了。
+</span><span class='line'>  可以打开 recovery/README.md 查看需要额外添加的语句。加上我上面加的那两句就行了，其他可以不用管。
+</span><span class='line'>  还有一个要改的就是分区表 recovery.fstab ，这个没法说清楚，请查看自己机子的分区对应修改！
+</span><span class='line'>
+</span><span class='line'>  可以看一下我给别的机子改的分区表，大概就那个样子，按照自己的机子分区改一下就行了～～
+</span><span class='line'>
+</span><span class='line'> 8. 然后就可以编译了，为了方便，可以在你的机型目录下新建一个 vendorsetup.sh 。并且在里面写上你的机型。
+</span><span class='line'>  打开你的机型文件夹，然后右键新建文档，改名 vendorsetup.sh ,打开修改，按情况在里面加上一句：
+</span><span class='line'>  add_lunch_combo cm_G6-eng 。下一步在lunch的时候就会有你的机型了。
+</span><span class='line'>
+</span><span class='line'> 9. 开始编译，执行如下命令：
+</span><span class='line'>  . build/envsetup.sh（或者 <span class="nb">source </span>build/envsetup.sh）        //执行这句很重要！   一般还是执行source build/envsetup.sh 这句吧
+</span><span class='line'>  lunch       // lunch，然后选择你的机型，输入序号即可
+</span><span class='line'>  make recoveryimage -j4      //注意空格，回车之后就开始编译了。（我i5-2450的处理器，-j8还行，不会卡爆～～）
+</span><span class='line'>
+</span><span class='line'>  应该是在加载文件，所以有点慢，请等待～～  之后CPU会满载进行编译～～
+</span><span class='line'>  只要不出现error ,不停止就没问题，直接编译完成就行了～～大概需要3分钟左右吧～～
+</span><span class='line'>  刚才看到的那些chinese一段是在执行汉化脚本的编译～～
+</span><span class='line'>
+</span><span class='line'> 10. 编译完了～～高通的一般能直接使用，mtk的需要另外处理（具体请自己搞吧～～）
+</span><span class='line'>  G6/recovery/root里面的文件就是编译生成的，mtk的经过重新打包就能用了。我不写了，上课去～～
+</span><span class='line'>  刷入之后有问题的，比如无法挂载分区，无法挂载U盘等等的，请检查分区表配置文件！
+</span><span class='line'>
+</span><span class='line'> 11. 为什么要自己编译呢？为了装逼信息么～～好吧，装逼信息在 recovery/Android.mk 里面～～
+</span><span class='line'>  可以自己修改，如果可以的话把我也加上呗～～（雨伞_先生）
 </span></code></pre></td></tr></table></div></figure>
 
 
-<hr />
+<p>文件都传到百度网盘了，包括源文件rmvb的也在（因为最近严打色情低俗内容，不知道为什么百度好像把<code>recovery</code>这个字眼加入到敏感词了，导致分享会失败，所以把文件都改了名～）</p>
 
-<h5>参考文章：1、<a href="http://gangmax.me/blog/2011/11/24/setup-local-environment-for-an-existing-octopress-instance-on-github/">Blog of GangMax</a>  2、<a href="http://blog.csdn.net/hankai1024/article/details/12786201">HAN Kai</a></h5>
+<blockquote><p>分享地址：<a href="http://pan.baidu.com/s/1bn1oZHd">点我打开</a></p>
+
+<p>百度云在线播放地址：<a href="http://pan.baidu.com/share/link?shareid=1387760483&amp;uk=3088635290&amp;fid=3552733136">点我播放</a></p></blockquote>
+
+<h5>如果觉得在线播放不爽，就直接下载吧！avi格式的204M大小。</h5>
+
+<h2>最后：</h2>
+
+<h5>我只是简单地对编译的过程及一些需要修改的地方做了说明介绍，很多东西都是视情况而定的，需要自己慢慢理解！有问题请百度，百度不行请找谷歌，不要什么事情都问别人，大神也是从小白慢慢走过来的！我也不是大神！百度和谷歌上能找到大多数问题的解决方案，<code>请一定学会使用</code>！</h5>
 </div>
 
 
@@ -161,12 +268,12 @@ master存储的是博客网站本身， &hellip;">
   
 
 
-<time datetime="2013-12-10T22:37:00+08:00" pubdate data-updated="true">Dec 10<span>th</span>, 2013</time>
+<time datetime="2014-05-12T12:58:35+08:00" pubdate data-updated="true">May 12<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/octopress/'>octopress</a>
+    <a class='category' href='/blog/categories/recovery/'>Recovery</a>, <a class='category' href='/blog/categories/skill/'>Skill</a>
   
 </span>
 
@@ -213,10 +320,8 @@ var jiathis_config={
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/12/02/linux-shell-use-and-skill/" title="Previous Post: Linux Shell 用法和技巧">&laquo; Linux Shell 用法和技巧</a>
+        <a class="basic-alignment left" href="/blog/2014/03/29/galapad-s6-keleui-1-dot-8-0/" title="Previous Post: 影驰S6_KeLeUI_1.8.0更新">&laquo; 影驰S6_KeLeUI_1.8.0更新</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/12/14/galapad-s6-lewa-os5/" title="Next Post: 影驰S6（GALAPAD_S6）乐蛙OS5">影驰S6（GALAPAD_S6）乐蛙OS5 &raquo;</a>
       
     </p>
   </footer>
