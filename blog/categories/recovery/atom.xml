@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Recovery | YuSan's Blog]]></title>
   <link href="http://YuSan.github.io/blog/categories/recovery/atom.xml" rel="self"/>
   <link href="http://YuSan.github.io/"/>
-  <updated>2014-05-24T18:11:01+08:00</updated>
+  <updated>2014-05-24T23:38:13+08:00</updated>
   <id>http://YuSan.github.io/</id>
   <author>
     <name><![CDATA[雨伞先生]]></name>
@@ -90,7 +90,9 @@ G6/recovery/root里面的文件就是编译生成的，mtk的经过重新打包�
 刷入之后有问题的，比如无法挂载分区，无法挂载U盘等等的，请检查分区表配置文件！</p></li>
 <li><p> 为什么要自己编译呢？为了装逼信息么～～好吧，装逼信息在 recovery/Android.mk 里面～～
 可以自己修改，如果可以的话把我也加上呗～～（雨伞_先生）
-```</p></li>
+<code>``
+这两天看了下</code>Octopress`的文档，然后试了试插入视频，貌似效果还不错的样子，所以又转码插入一个视频：
+<video width='640' height='320' preload='none' controls poster=''><source src='http://yusan.qiniudn.com/blogrecovery.m4v">http://yusan.qiniudn.com/blogrecovery.m4v</a>' ></video></p></li>
 </ol>
 
 
@@ -102,9 +104,7 @@ G6/recovery/root里面的文件就是编译生成的，mtk的经过重新打包�
 
 <h5>如果觉得在线播放不爽，就直接下载吧！avi格式的204M大小。</h5>
 
-<h2>最后：</h2>
-
-<h5>我只是简单地对编译的过程及一些需要修改的地方做了说明介绍，很多东西都是视情况而定的，需要自己慢慢理解！有问题请百度，百度不行请找谷歌，不要什么事情都问别人，大神也是从小白慢慢走过来的！我也不是大神！百度和谷歌上能找到大多数问题的解决方案，<code>请一定学会使用</code>！</h5>
+<p><p class='info warning' data-title='最后:'>我只是简单地对编译的过程及一些需要修改的地方做了说明介绍，很多东西都是视情况而定的，需要自己慢慢理解！有问题请百度，百度不行请找谷歌，不要什么事情都问别人，大神也是从小白慢慢走过来的！我也不是大神！<span class="fluo">百度和谷歌上能找到大多数问题的解决方案，请一定学会使用！</span></p></p>
 ]]></content>
   </entry>
   

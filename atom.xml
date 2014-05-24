@@ -4,7 +4,7 @@
   <title><![CDATA[YuSan's Blog]]></title>
   <link href="http://YuSan.github.io/atom.xml" rel="self"/>
   <link href="http://YuSan.github.io/"/>
-  <updated>2014-05-24T18:11:01+08:00</updated>
+  <updated>2014-05-24T23:38:13+08:00</updated>
   <id>http://YuSan.github.io/</id>
   <author>
     <name><![CDATA[雨伞先生]]></name>
@@ -12,6 +12,56 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Linux下sublime_text的安装与使用]]></title>
+    <link href="http://YuSan.github.io/blog/2014/05/24/sublime-text/"/>
+    <updated>2014-05-24T18:31:35+08:00</updated>
+    <id>http://YuSan.github.io/blog/2014/05/24/sublime-text</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://yusan.qiniudn.com/blog2014-05-24%2020:18:38%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" width="270" height="260" title="'sublime_text 3059'" ></p>
+
+<h4><code>Sublime_text</code>，一个跨平台的代码编辑器。刚买电脑的时候在网上看到然后安装过，因为功能强大，作为小白的我看了看然后就卸载了，因为我不会用！那时候是在<code>Windows</code>下，我还有别的编辑器可以用，比如Notepad++，还有Emediter等软件都是不错的。</h4>
+
+<!--more-->
+
+
+<h4>后来因为想学点安卓的东西，所以装了linux，一直小白的我不会用vim和Emacs，就用系统自带的<code>gedit</code>，觉得还是很好的，因为很多代码都支持高亮的。</h4>
+
+<h4>再后来想看 <strong>smali</strong> 文件,所以想找个好用的编辑器来高亮显示代码，所以找啊找，最后又找到了<code>Sublime_Text</code>，因为它支持插件，可以安装插件来支持 <strong>smali</strong> 代码高亮显示.</h4>
+
+<p><img src="http://yusan.qiniudn.com/blog2014-05-24%2020:37:49%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" title="'smali代码高亮显示'" ></p>
+
+<h2>软件安装：</h2>
+
+<h4>Sublime_text的下载和安装挺简单的，直接到<a href="http://www.sublimetext.com/">Sublime Text官网</a>选择下载即可！或者直接下载<span class="fluo">Sublime_Text 3(Build 3059)</span>:<a href="http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3059_i386.deb">32bit</a>|<a href="http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3059_amd64.deb">64bit</a>。然后在终端执行下面的命令安装即可！</h4>
+
+<pre><code>sudo dpkg -i *.deb
+</code></pre>
+
+<h2>软件破解：</h2>
+
+<h4>因为软件是收费的（可以无限期试用），所以又找了一下破解，在<a href="http://bbs.pediy.com/showthread.php?t=182774">看雪论坛</a>上有破解的帖子，下载破解文件(<a href="http://yun.baidu.com/share/link?shareid=3756674317&amp;uk=2986591212">32bit</a>|<a href="http://yun.baidu.com/share/link?shareid=3762073257&amp;uk=2986591212">64bit</a>)更面并替换原来安装的文件即可破解！安装文件路径在 <strong>/opt/sublime_text/</strong> 下。</h4>
+
+<h2>解决中文输入：</h2>
+
+<h4>然后还有一个很头疼的问题就是在Sublime_text里面无法输入中文，为了解决这个问题，找了好久，最后成功了：下载此<a href="http://yusan.qiniudn.com/Sublime_Text_imfix.tar">文件</a>,解压文件到任意路径，并复制库文件到安装路径<code>/opt/sublime_text/</code>下，然后将Desktop文件复制到<code>/usr/share/applications/</code>替换里面的文件</h4>
+
+<pre><code>sudo cp libsublime-imfix.so /opt/sublime_text/.
+sudo cp sublime_text.desktop  /usr/share/applications/.
+</code></pre>
+
+<p><img src="http://yusan.qiniudn.com/blog2014-05-24%2022:22:38%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" title="'输入中文'" ></p>
+
+<h2>在终端打开：</h2>
+
+<h4>解决了中文输入的问题之后，就可以正常使用了。但是怎么让sublime_text在终端可以执行命令打开呢？又百度了一下：在 <strong>/usr/bin/</strong> 下建立它的链接即可，在终端执行下面的命令即可：</h4>
+
+<pre><code>sudo ln -s /opt/sublime_text/sublime_text /usr/bin/sublime
+</code></pre>
+
+<h4>这样就可以直接在终端输入<code>sublime</code>命令打开Sublime_Text编辑器了！</h4>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Linux下使用FFmpeg进行屏幕录像]]></title>
@@ -216,6 +266,9 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>这两天看了下<code>Octopress</code>的文档，然后试了试插入视频，貌似效果还不错的样子，所以又转码插入一个视频：
+<video width='640' height='320' preload='none' controls poster='http://yusan.qiniudn.com/blog2014-05-24%2020:46:02%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png'><source src='http://yusan.qiniudn.com/blogrecovery.m4v' ></video></p>
+
 <p>文件都传到百度网盘了，包括源文件rmvb的也在（因为最近严打色情低俗内容，不知道为什么百度好像把<code>recovery</code>这个字眼加入到敏感词了，导致分享会失败，所以把文件都改了名～）</p>
 
 <blockquote><p>分享地址：<a href="http://pan.baidu.com/s/1bn1oZHd">点我打开</a></p>
@@ -224,9 +277,8 @@
 
 <h5>如果觉得在线播放不爽，就直接下载吧！avi格式的204M大小。</h5>
 
-<h2>最后：</h2>
+<p class='info warning' data-title='最后:'>我只是简单地对编译的过程及一些需要修改的地方做了说明介绍，很多东西都是视情况而定的，需要自己慢慢理解！有问题请百度，百度不行请找谷歌，不要什么事情都问别人，大神也是从小白慢慢走过来的！我也不是大神！<span class="fluo">百度和谷歌上能找到大多数问题的解决方案，请一定学会使用！</span></p>
 
-<h5>我只是简单地对编译的过程及一些需要修改的地方做了说明介绍，很多东西都是视情况而定的，需要自己慢慢理解！有问题请百度，百度不行请找谷歌，不要什么事情都问别人，大神也是从小白慢慢走过来的！我也不是大神！百度和谷歌上能找到大多数问题的解决方案，<code>请一定学会使用</code>！</h5>
 ]]></content>
   </entry>
   
@@ -312,15 +364,6 @@
 
 
 <h2>【ROM截图】</h2>
-
-<p><img src="http://ntu.me/di/4GC59/q.png" alt="" />
-<img src="http://ntu.me/di/2039Q/w.png" alt="" />
-<img src="http://ntu.me/di/V765J/e.png" alt="" />
-<img src="http://ntu.me/di/2LC5I/r.png" alt="" />
-<img src="http://ntu.me/di/WA2QM/a.png" alt="" />
-<img src="http://ntu.me/di/A0Y3V/z.png" alt="" />
-<img src="http://ntu.me/di/F3QWV/x.png" alt="" />
-<img src="http://ntu.me/di/K5UR3/c.png" alt="" /></p>
 
 <h2>【刷机前事项】</h2>
 
@@ -416,9 +459,6 @@
 <h2>详细更新说明请前往<a href="http://bbs.lewaos.com/forum.php?mod=viewthread&amp;tid=211375">乐蛙论坛</a>查看！</h2>
 
 <h2>【ROM截图】</h2>
-
-<p><img src="http://ntu.me/di/U9BEK/12312.png" alt="" />
-<img src="http://ntu.me/di/BQ32B/12313123.png" alt="" /></p>
 
 <h2>【刷机前事项】</h2>
 
@@ -1683,7 +1723,7 @@ EOF</p></blockquote>
 
 <h4>设置git email:</h4>
 
-<blockquote><p>git config &mdash;global user.email &ldquo;<a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#109;&#101;&#x40;&#x65;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#101;&#46;&#x63;&#x6f;&#109;">&#x6d;&#101;&#x40;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#x2e;&#x63;&#x6f;&#109;</a>&rdquo;</p></blockquote>
+<blockquote><p>git config &mdash;global user.email &ldquo;<a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x6d;&#x65;&#x40;&#x65;&#120;&#97;&#109;&#112;&#x6c;&#x65;&#46;&#99;&#111;&#x6d;">&#109;&#x65;&#x40;&#101;&#120;&#97;&#109;&#x70;&#108;&#101;&#x2e;&#x63;&#x6f;&#x6d;</a>&rdquo;</p></blockquote>
 
 <h4>To sync with master if you have unpublished commits:</h4>
 
