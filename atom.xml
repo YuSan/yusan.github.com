@@ -4,7 +4,7 @@
   <title><![CDATA[YuSan's Blog]]></title>
   <link href="http://YuSan.github.io/atom.xml" rel="self"/>
   <link href="http://YuSan.github.io/"/>
-  <updated>2014-05-24T18:08:34+08:00</updated>
+  <updated>2014-05-24T18:11:01+08:00</updated>
   <id>http://YuSan.github.io/</id>
   <author>
     <name><![CDATA[雨伞先生]]></name>
@@ -1683,7 +1683,7 @@ EOF</p></blockquote>
 
 <h4>设置git email:</h4>
 
-<blockquote><p>git config &mdash;global user.email &ldquo;<a href="&#109;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#109;&#x65;&#x40;&#x65;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#x2e;&#x63;&#x6f;&#109;">&#x6d;&#x65;&#64;&#x65;&#x78;&#x61;&#x6d;&#112;&#108;&#101;&#46;&#99;&#111;&#x6d;</a>&rdquo;</p></blockquote>
+<blockquote><p>git config &mdash;global user.email &ldquo;<a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#109;&#101;&#x40;&#x65;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#101;&#46;&#x63;&#x6f;&#109;">&#x6d;&#101;&#x40;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#x2e;&#x63;&#x6f;&#109;</a>&rdquo;</p></blockquote>
 
 <h4>To sync with master if you have unpublished commits:</h4>
 
