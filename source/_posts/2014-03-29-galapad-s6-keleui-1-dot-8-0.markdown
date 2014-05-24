@@ -60,14 +60,6 @@ categories: Rom GALAPAD_S6 KeLeUI
 
 【ROM截图】
 -----------------
-![](http://ntu.me/di/4GC59/q.png)
-![](http://ntu.me/di/2039Q/w.png)
-![](http://ntu.me/di/V765J/e.png)
-![](http://ntu.me/di/2LC5I/r.png)
-![](http://ntu.me/di/WA2QM/a.png)
-![](http://ntu.me/di/A0Y3V/z.png)
-![](http://ntu.me/di/F3QWV/x.png)
-![](http://ntu.me/di/K5UR3/c.png)
 【刷机前事项】
 ----------------
 - 本ROM为Recovery卡刷包，需要第三方recovery支持（[CWM](http://bbs.digi8.net/forum.php?mod=viewthread&tid=3606&extra=page%3D1)）

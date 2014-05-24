@@ -34,8 +34,6 @@ categories: Rom GALAPAD_S6 LeWa-OS5
 ##详细更新说明请前往[乐蛙论坛](http://bbs.lewaos.com/forum.php?mod=viewthread&tid=211375)查看！##
 【ROM截图】
 -----------------
-![](http://ntu.me/di/U9BEK/12312.png)
-![](http://ntu.me/di/BQ32B/12313123.png)
 【刷机前事项】
 ----------------
 - 本ROM为Recovery卡刷包，需要第三方recovery支持（[CWM](http://bbs.digi8.net/forum.php?mod=viewthread&tid=3606&extra=page%3D1)）
