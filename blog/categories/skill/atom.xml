@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Skill | YuSan's Blog]]></title>
+  <link href="http://YuSan.github.io/blog/categories/skill/atom.xml" rel="self"/>
+  <link href="http://YuSan.github.io/"/>
+  <updated>2014-05-24T18:08:34+08:00</updated>
+  <id>http://YuSan.github.io/</id>
+  <author>
+    <name><![CDATA[雨伞先生]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[编译Recovery视频教程]]></title>
+    <link href="http://YuSan.github.io/blog/2014/05/12/compile-recovery/"/>
+    <updated>2014-05-12T12:58:35+08:00</updated>
+    <id>http://YuSan.github.io/blog/2014/05/12/compile-recovery</id>
+    <content type="html"><![CDATA[<hr />
+
+<p><strong>这个视频貌似是去年在一个朋友的请求之下录的，然后传到网盘分享给他了，之后也忘了～～</strong></p>
+
+<!--more-->
+
+
+<hr />
+
+<p><strong>最近电脑硬盘空间有点紧缺，于是整理文件又发现了这个～～
+因为录的源文件是rmvb格式的，居然有1G多，所以下载了格式工厂进行了转码，转为avi格式大小变为了200多M，打开看了一下，清晰度依然很好，完全没有被压缩，现在重新上传到百度网盘，分享给有需要的人（也许有人需要吧～～）</strong></p>
+
+<h2>说明：</h2>
+
+<blockquote><p>这里面主要是说recovery编译的，至于前期的如何装系统，装什么系统，怎么配置环境，怎么下载源码等等的请自行百度，网上都有，并且是很详细的教程，甚至是傻瓜式的一键配置脚本等等！</p></blockquote>
+
+<p><strong>里面的文档也贴上来吧～～</strong></p>
+
+<pre><code>微博：weibo.com/APAR （求关注～）
+博客：yusan/github.com  （因为视频是去年录制的，那里面文档上的bolg地址是错的，因为我觉得不好，就把它给废了！）
+</code></pre>
+
+<p>```bash
+ 1. 同步cm10.1的源码，具体操作请百度之～～
+ 2. 打开终端，到源码目录下：</p>
+
+<pre><code>cd Android/cm10.1                   //我的源码目录
+</code></pre>
+
+<ol>
+<li>如果不想使用cm10.1的英文源码，可以按如下操作获取我的recovery汉化源码：（如不需要，请直接下一步！）
+rm -rf bootable/recovery         //删除原来的cm10.1的recovery源码
+git clone git@github.com:APAR1992/CWM_Recovery_v6037_cn.git bootable/recovery      //获取我的recovery源码
+我有源码，就不执行上面这句了，直接复制一下～～</li>
+<li>获取你的机子的recovery.img（原厂的或者别人编译的也行），具体请自己搞定，线刷包里面有，没有的自己想办法提取，
+这儿就不说了。为了方便，将名字改为你的机子的型号（eg：G6.img），然后将其放到主目录（~/G6.img）。
+放到其它目录也行，按自己情况随便放吧。</li>
+<li><p>在源码目录执行如下语句生成 otatools ，下一步会用到：
+make otatools -j4       //注意空格，后面的 -j4 可以视你的电脑配置而定，电脑配置不行就不加或者 -j2 ,
+电脑配置好点呢就 -j8 或者 -j16 ，你可以试试，不过太大了电脑会卡死～～
+执行这步可能需要比较长的时间，有可能在1小时左右，请耐心等待（已经编译过的，请直接下一步！）
+otatools编译完成之后还需要把 out/host/linux-x86/bin 文件夹加入到环境变量中去，这个请百度一下吧，
+ubuntu直接在主目录下终端执行 gedit .bashrc ,打开修改就行了，网上都有，按情况添加就行了，其他linux版本可能没有
+~/.bashrc 文件，可以加到/etc/environment 里面，都是一样的效果
+完了之后执行  source .bashrc (source /etc/environment)  使修改生效，重启一下也是可以的～～百度都有，就不详细说了</p>
+
+<p>我已经有了，所以这一步就不用执行了，跳过～～</p></li>
+<li><p>执行如下语句生成你的机型device：
+./build/tools/device/mkvendor.sh XiaoCai G6 ~/G6.img      //（cpio: 归档非正常终止 ）不用管，mtk的就这样，不影响编译。
+请注意命令中的空格，不要打错！！！
+生成device文件了～～～好像没什么可说的～～</p></li>
+<li><p>修改你的机子的device，主要是改BoardConfig.mk ，因为只是编译recovery，所以稍微修改一下就可以了。
+可以打开 recovery/README.md 查看需要额外添加的语句。加上我上面加的那两句就行了，其他可以不用管。
+还有一个要改的就是分区表 recovery.fstab ，这个没法说清楚，请查看自己机子的分区对应修改！</p>
+
+<p>可以看一下我给别的机子改的分区表，大概就那个样子，按照自己的机子分区改一下就行了～～</p></li>
+<li><p>然后就可以编译了，为了方便，可以在你的机型目录下新建一个 vendorsetup.sh 。并且在里面写上你的机型。
+打开你的机型文件夹，然后右键新建文档，改名 vendorsetup.sh ,打开修改，按情况在里面加上一句：
+add_lunch_combo cm_G6-eng 。下一步在lunch的时候就会有你的机型了。</p></li>
+<li><p>开始编译，执行如下命令：
+. build/envsetup.sh（或者 source build/envsetup.sh）        //执行这句很重要！   一般还是执行source build/envsetup.sh 这句吧
+lunch       // lunch，然后选择你的机型，输入序号即可
+make recoveryimage -j4      //注意空格，回车之后就开始编译了。（我i5-2450的处理器，-j8还行，不会卡爆～～）</p>
+
+<p>应该是在加载文件，所以有点慢，请等待～～  之后CPU会满载进行编译～～
+只要不出现error ,不停止就没问题，直接编译完成就行了～～大概需要3分钟左右吧～～
+刚才看到的那些chinese一段是在执行汉化脚本的编译～～</p></li>
+<li><p> 编译完了～～高通的一般能直接使用，mtk的需要另外处理（具体请自己搞吧～～）
+G6/recovery/root里面的文件就是编译生成的，mtk的经过重新打包就能用了。我不写了，上课去～～
+刷入之后有问题的，比如无法挂载分区，无法挂载U盘等等的，请检查分区表配置文件！</p></li>
+<li><p> 为什么要自己编译呢？为了装逼信息么～～好吧，装逼信息在 recovery/Android.mk 里面～～
+可以自己修改，如果可以的话把我也加上呗～～（雨伞_先生）
+```</p></li>
+</ol>
+
+
+<p>文件都传到百度网盘了，包括源文件rmvb的也在（因为最近严打色情低俗内容，不知道为什么百度好像把<code>recovery</code>这个字眼加入到敏感词了，导致分享会失败，所以把文件都改了名～）</p>
+
+<blockquote><p>分享地址：<a href="http://pan.baidu.com/s/1bn1oZHd">点我打开</a></p>
+
+<p>百度云在线播放地址：<a href="http://pan.baidu.com/share/link?shareid=1387760483&amp;uk=3088635290&amp;fid=3552733136">点我播放</a></p></blockquote>
+
+<h5>如果觉得在线播放不爽，就直接下载吧！avi格式的204M大小。</h5>
+
+<h2>最后：</h2>
+
+<h5>我只是简单地对编译的过程及一些需要修改的地方做了说明介绍，很多东西都是视情况而定的，需要自己慢慢理解！有问题请百度，百度不行请找谷歌，不要什么事情都问别人，大神也是从小白慢慢走过来的！我也不是大神！百度和谷歌上能找到大多数问题的解决方案，<code>请一定学会使用</code>！</h5>
+]]></content>
+  </entry>
+  
+</feed>

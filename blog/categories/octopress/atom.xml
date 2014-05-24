@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | YuSan's Blog]]></title>
+  <link href="http://YuSan.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://YuSan.github.io/"/>
+  <updated>2014-05-24T18:08:34+08:00</updated>
+  <id>http://YuSan.github.io/</id>
+  <author>
+    <name><![CDATA[雨伞先生]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[在多台机子上写octopress博客]]></title>
+    <link href="http://YuSan.github.io/blog/2013/12/10/zai-duo-tai-ji-zi-shang-xie-octopressbo-ke/"/>
+    <updated>2013-12-10T22:37:00+08:00</updated>
+    <id>http://YuSan.github.io/blog/2013/12/10/zai-duo-tai-ji-zi-shang-xie-octopressbo-ke</id>
+    <content type="html"><![CDATA[<hr />
+
+<h4>因为电脑装的双系统，有时候需要切换使用，为了方便写博客，在两个系统下面都搞好了环境，可是切换系统之后因为源码不一致，会出错，so，百度之～～</h4>
+
+<!--more-->
+
+
+<ul>
+<li><p>Octopress的git仓库(repository)有两个分支，分别是master和source。</p></li>
+<li><p>master存储的是博客网站本身，而source存储的是生成博客的源文件。</p></li>
+<li><p>master的内容放在根目录的_deploy文件夹内，当你push源文件时会忽略，它使用的是rake deploy命令来更新的。</p></li>
+<li><p>如果几台电脑上面都配置好了Otcopress，要在其中一台上写博客,需要进行同步，更新source仓库即可。更新master并不是必须的，因为更改源文件之后还是需要rake generate，这个时候会自动进行 master更新。</p></li>
+</ul>
+
+
+<p>```bash
+cd your_local_octopress_directory
+cd _deploy
+git pull origin master   # update the local master branch
+cd ..
+git pull origin source   # update the local source branch</p>
+
+<h2>```</h2>
+
+<h5>参考文章：1、<a href="http://gangmax.me/blog/2011/11/24/setup-local-environment-for-an-existing-octopress-instance-on-github/">Blog of GangMax</a>  2、<a href="http://blog.csdn.net/hankai1024/article/details/12786201">HAN Kai</a></h5>
+]]></content>
+  </entry>
+  
+</feed>

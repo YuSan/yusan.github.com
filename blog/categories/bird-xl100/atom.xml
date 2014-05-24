@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Bird_XL100 | YuSan's Blog]]></title>
+  <link href="http://YuSan.github.io/blog/categories/bird-xl100/atom.xml" rel="self"/>
+  <link href="http://YuSan.github.io/"/>
+  <updated>2014-05-24T18:08:34+08:00</updated>
+  <id>http://YuSan.github.io/</id>
+  <author>
+    <name><![CDATA[雨伞先生]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[波导枭龙HD(XL100)线刷第三方Recovery超详细图文教程]]></title>
+    <link href="http://YuSan.github.io/blog/2014/01/10/bird-xl100-flash-recovery-method/"/>
+    <updated>2014-01-10T22:53:44+08:00</updated>
+    <id>http://YuSan.github.io/blog/2014/01/10/bird-xl100-flash-recovery-method</id>
+    <content type="html"><![CDATA[<hr />
+
+<h2>【说明】</h2>
+
+<p>此教程是用来指导刷入波导枭龙HD（Bird XL100）第三方Recovery的教程，因为阿里云系统的缘故，貌似目前只有这种方式可以成功刷入Recovery。</p>
+
+<!--more-->
+
+
+<p><strong><strong>请认真看帖子，看清每一步再进行操作，否则出错一律不负责。</strong></strong></p>
+
+<h2>【第一步】</h2>
+
+<ol>
+<li><p>下载MTK线刷联机驱动 ，附上下载地址：<br/>
+链接:  <a href="http://pan.baidu.com/s/1EKwCi">点我下载</a>   密码: <code>iw6v</code></p></li>
+<li><p>解压驱动文件，并安装。如下图：
+<img src="http://bbs.cn314.com/data/attachment/forum/201309/14/124055m3zj2jhaca213bn9.png" alt="" /></p></li>
+</ol>
+
+
+<h2>第二步：</h2>
+
+<ol>
+<li><p>下载线刷工具 SP_Flash_Tool （注意：此工具为MT6582专用，其它线刷工具用不了，请务必从以下地址下载！），附上下载地址：<br/>
+链接:   <a href="http://pan.baidu.com/s/1d6Ete">点我下载</a>    密码: <code>aarh</code></p></li>
+<li><p>解压工具到任意文件夹；
+<img src="http://bbs.cn314.com/data/attachment/forum/201309/14/124059b5l5elwhfpxw3ttl.png" alt="" /></p></li>
+<li><p>双击运行SP_Flash_Tool.exe（注意：此时不要将手机连接到电脑）
+<img src="http://bbs.cn314.com/data/attachment/forum/201312/18/210704lomptyhodhizvl8e.png" alt="" /></p></li>
+<li><p>点击 Scatter-loading 按钮选择 Scatter 文件（scatter文件下载： <a href="http://bbs.cn314.com/forum.php?mod=attachment&amp;aid=MjcxNTEyfGJlZGU0Njc2fDEzOTAwNjM2Njl8MjI4MzY2fDE5MjcwNA%3D%3D">MT6582_Android_scatter.txt</a>)
+<img src="http://bbs.cn314.com/data/attachment/forum/201312/18/205828ha92vlrfj09r92ja.jpg" alt="" /></p></li>
+<li><p>在上方选项中选择window，然后点击勾选“Write Memory”；
+<img src="http://bbs.cn314.com/data/attachment/forum/201312/18/205828vv77gvr1z47xgyxn.jpg" alt="" /></p></li>
+<li><p>上一步执行完成之后会多出一个选项卡——“Write Memory”。选择它，然后按下图操作：</p>
+
+<blockquote><ul>
+<li>1）、Open Raw Data；</li>
+<li>2）、选择下载的Recovery文件</li>
+<li>3）、点击“打开”，即选择了Recovery文件，然后看看“File Path”确保文件路径正确；</li>
+<li>4）、在“Memory Setting”选择“emmc”；</li>
+<li>5）、在下面的两个框输入16进制的起始地址和长度，两个框内的数据分别为：（此处必须填写正确！可在下面复制）<br/>
+<code>Begin Address：  0x0000000002980000</code><br/>
+<code>Container Length： 0x00600000</code></li>
+</ul>
+</blockquote></li>
+</ol>
+
+
+<p><img src="http://bbs.cn314.com/data/attachment/forum/201312/18/205828c76di16f5rc6thzy.jpg" alt="" /></p>
+
+<p>7.点击工具上方的 第二个按钮“Write Memory ” 按钮，并将手机关机连接到电脑  ,等待进度条走完，出现绿色圆圈即可；
+<img src="http://bbs.cn314.com/data/attachment/forum/201312/18/205827r5ollmj6667994f9.jpg" alt="" /></p>
+
+<p>8.刷入完成，拔掉数据线。如果需要进入 Recovery 模式，按住“音量+”和“电源键”，并选择 &ldquo;Recovery mode&rdquo; 即可。</p>
+
+<p><strong>好了，教程到此结束！如果在手机关机连接到电脑之后，工具未出现进度条，手机进入充电，那么请回到第一步重新安装联机驱动。</strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[波导枭龙HD（Bird XL100）中文恢复系统(cwm-Recovery)]]></title>
+    <link href="http://YuSan.github.io/blog/2014/01/10/bird-xl100-cwm-recovery/"/>
+    <updated>2014-01-10T22:31:53+08:00</updated>
+    <id>http://YuSan.github.io/blog/2014/01/10/bird-xl100-cwm-recovery</id>
+    <content type="html"><![CDATA[<hr />
+
+<h2>【免责申明】:</h2>
+
+<ul>
+<li>本Recovery已在机器测试通过,纯属个人兴趣自制,非官方recovery；</li>
+<li>请务必保证电池电量在60％以上并保证刷机过程中电脑不会断电；</li>
+</ul>
+
+
+<!--more-->
+
+
+<ul>
+<li>刷机有风险，请仔细阅读相关的刷机教程并自行承担刷机风险，本人不对任何刷机失败承担任何责任；</li>
+<li>如果您在此recovery的基础上修复了某些尚未发现的Bug，并提出改善建议，建议继续公开和分享您的工作成果；</li>
+<li>本人特此申明对recovery之使用不提供任何保证，不对任何用户保证本recovery的适用性，不保证无故障产生；亦不对任何用     户使用此recovery所遭遇到的任何理论上的或实际上的损失承担责任；</li>
+<li>刷此recovery引起的保修失效、变砖等问题不在此recovery发布人可以解决的问题范围之内；</li>
+<li>如果您使用本recovery，即表示已经默认接受了此协议 .</li>
+</ul>
+
+
+<h2>【鸣谢】：</h2>
+
+<ul>
+<li>感谢大神们在github上无偿贡献的代码；</li>
+</ul>
+
+
+<h2>【功能简介】：</h2>
+
+<blockquote><p>1.基于CWM_Recovery6037源码编制作，并完全汉化 ;</p>
+
+<p>2.采用全新汉化字库，大字体，界面更清晰；</p>
+
+<p>3.完美支持 ADB Sideload 命令推送刷机包；</p>
+
+<p>4.完美支持备份和恢复系统（支持tar、dup、tgz三种备份格式，都可完全恢复）</p>
+
+<p>5.支持挂载U盘</p>
+
+<p>6.支持开启彩虹界面（从上到下按5次可开启或关闭彩虹模式）</p>
+
+<p>7.支持时间及电池电量显示</p></blockquote>
+
+<h2>【图片展示】：</h2>
+
+<p><img src="http://bbs.cn314.com/data/attachment/forum/201312/18/195838q9ijcn0n4r6zjerf.jpg" alt="" />
+<img src="http://bbs.cn314.com/data/attachment/forum/201312/18/200438jhyk9yizbrttdmhk.jpg" alt="" /></p>
+
+<h2>【下载】：</h2>
+
+<p><a href="http://pan.baidu.com/s/1bneRjCN">点我下载</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[波导枭龙HD（Bird XL100） LeWa-OS5]]></title>
+    <link href="http://YuSan.github.io/blog/2014/01/10/bird-xl100-lewa-os5/"/>
+    <updated>2014-01-10T21:37:43+08:00</updated>
+    <id>http://YuSan.github.io/blog/2014/01/10/bird-xl100-lewa-os5</id>
+    <content type="html"><![CDATA[<hr />
+
+<h2>【刷机教程】</h2>
+
+<ul>
+<li><ol>
+<li>刷机前请先通过豌豆荚或者91手机助手备份好手机上的资料，以免资料丢失！</li>
+</ol>
+</li>
+<li><ol>
+<li>严格按照刷机指导书操作</li>
+</ol>
+</li>
+</ul>
+
+
+<!--more-->
+
+
+<h2>【免责申明】</h2>
+
+<ul>
+<li>1）请务必保证电池电量在60％以上并保证刷机过程中电脑或者手机不会断电；</li>
+<li>2）将此固件使用在其它机型导致的问题,本人及云卓论坛将不负担任何责任</li>
+<li>3）刷机有风险，请仔细阅读相关的刷机教程并自行承担刷机风险，普通用户建议至当地维修站进行升级，本人不对任何刷机失败承担任何责任；</li>
+<li>4）本人未持有 ROM 及其中的软件的版权，请以研究和学习为目的，合法使用。</li>
+<li>5）如果您在此Rom的基础上修复了某些尚未发现的Bug，并提出改善建议，建议继续公开和分享您的研究成果；</li>
+<li>6）本人特此申明对 ROM 之使用不提供任何保证，不对任何用户保证本 ROM 的适用性，不保证无故障产生；亦不对任何用户使用此 ROM 所遭遇到的任何理论上的或实际上的损失承担责任。</li>
+<li>7）如果您使用本软件，即表示已经默认接受了此协议。</li>
+</ul>
+
+
+<h2>【ROM说明】</h2>
+
+<ul>
+<li>基于乐蛙OS5进行移植（不是最新版，等有时间再更新吧）；</li>
+<li>功能基本正常，WIFI,蓝牙,相机,通讯,声音等；</li>
+<li>个人测试未发现明显bug，如使用过程中发现bug请理性反馈，勿喷，谢谢！</li>
+<li>此ROM为本人移植发布，转载修改请注明出处，请尊重作者的劳动成果！</li>
+</ul>
+
+
+<h2>【已知Bug】</h2>
+
+<p><code>javascript
+自带相机最大像素只能到600W，但是清晰度还是可以接受的，第三方相机可识别800W！
+</code></p>
+
+<h2>【ROM截图】</h2>
+
+<p><img src="http://ntu.me/di/UVT7V/Screenshot_2014-01-07-21-56-29.png" alt="" />
+<img src="http://ntu.me/di/6BG3P/Screenshot_2014-01-07-21-46-47.jpg" alt="" />
+<img src="http://ntu.me/di/08RRT/Screenshot_2014-01-07-21-47-44.png" alt="" />
+<img src="http://ntu.me/di/RIJFU/Screenshot_2014-01-07-21-48-41.png" alt="" /></p>
+
+<h2>【刷机前事项】</h2>
+
+<ul>
+<li>本ROM为Recovery卡刷包，需要第三方recovery支持</li>
+<li>需要备份自己机器的原版系统的童鞋，可以在刷机前使用Recovery备份自己的原有系统</li>
+</ul>
+
+
+<h2>【刷机教程】</h2>
+
+<blockquote><ol>
+<li>将下载下来的XXX.zip 刷机包不要解压，拷贝到你的手机的SD卡上（也可已放到内置SD卡）</li>
+<li>一直按住音量上+电源按钮开机，不要松开，直到进入 recovery模式</li>
+<li>选择“清空所有数据”和“清空缓存”</li>
+<li>选择“从SD卡选择刷机包”</li>
+<li>再选“从SD卡选择ZIP文件”（如果你的刷机包放在内置SD卡，则选择从内置SD卡选择刷机包）</li>
+<li>再找到刚下载的zip格式刷机包确认</li>
+<li>确认后，刷机开始，稍等1分钟左右，完成。</li>
+<li>刷完后，返回首菜单，选择“立即重启系统”重启手机.</li>
+<li>刷机完成，手机开机较慢，请耐心等待。</li>
+</ol>
+</blockquote>
+
+<hr />
+
+<p>PS: 刷机后，第一次开机一般都比较慢(2-3分钟)，请耐心等待。 进入桌面设置完基本参数、恢复数据后，建议重启一次手机，可以很大改善系统速度。</p>
+
+<ul>
+<li>建议使用优质、高速的TF卡，确保文件完整。</li>
+<li>请不要任意改变升级包内容，否则变砖。</li>
+<li>升级前请注意保证电池有充足的电量。</li>
+</ul>
+
+
+<h2>【ROM下载】</h2>
+
+<p><a href="http://pan.baidu.com/s/1kTr1Y31">点我下载</a></p>
+]]></content>
+  </entry>
+  
+</feed>
