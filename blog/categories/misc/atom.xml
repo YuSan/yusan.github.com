@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Misc | YuSan's Blog]]></title>
+  <link href="http://YuSan.github.io/blog/categories/misc/atom.xml" rel="self"/>
+  <link href="http://YuSan.github.io/"/>
+  <updated>2014-05-27T23:16:26+08:00</updated>
+  <id>http://YuSan.github.io/</id>
+  <author>
+    <name><![CDATA[雨伞先生]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[延时电影-Moscow]]></title>
+    <link href="http://YuSan.github.io/blog/2014/05/27/yan-shi-dian-ying-moscow/"/>
+    <updated>2014-05-27T22:40:39+08:00</updated>
+    <id>http://YuSan.github.io/blog/2014/05/27/yan-shi-dian-ying-moscow</id>
+    <content type="html"><![CDATA[<h4>很喜欢的一个延时影片，是原来在试用<code>Xplay</code>的时候手机里面带的，感觉很不错，所以在还回手机的时候把这个拷贝下来了！</h4>
+
+<!--more-->
+
+
+<p><p class='info info' data-title='影片名称'>Moscow</p>
+<video width='640' height='320' preload='none' controls poster=''><source src='http://yusan.qiniudn.com/Moscow.m4v">http://yusan.qiniudn.com/Moscow.m4v</a>' ></video></p>
+
+<h4>因为视频有点大，如果上面播放不了，可以点击这儿<a href="http://yusan.qiniudn.com/Moscow.m4v">播放</a></h4>
+]]></content>
+  </entry>
+  
+</feed>
