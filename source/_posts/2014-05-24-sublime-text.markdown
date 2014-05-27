@@ -24,6 +24,12 @@ categories: software
     sudo cp libsublime-imfix.so /opt/sublime_text/.
     sudo cp sublime_text.desktop  /usr/share/applications/.
 {% img http://yusan.qiniudn.com/blog2014-05-24%2022:22:38%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png '输入中文' %}
+
+{%ribbonp info FFmpeg%}
+如果按照上述步骤做完了还是不能在`Sublime`输入中文，试试安装`gtk+-2.0`
+{%endribbonp%}
+    sudo apt-get install gtk+-2.0
+{%img http://yusan.qiniudn.com/2014-05-27%2022:20:56%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png '安装gtk+-2.0' %}
 在终端打开：
 ----
 ####解决了中文输入的问题之后，就可以正常使用了。但是怎么让sublime_text在终端可以执行命令打开呢？又百度了一下：在 **/usr/bin/** 下建立它的链接即可，在终端执行下面的命令即可：
