@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Markdown Editor——haroopad"
+date: 2014-06-10 12:15:54 +0800
+comments: true
+categories: Markdown Linux software
+---
+####[Haroopad](http://pad.haroopress.com/user.html)是一款跨平台的markdown编辑器，使用Chromium作为UI，支持Windows、Mac OS X和Linux。主题样式丰富，语法标亮支持54种编程语言。{%img http://pad.haroopress.com/assets/images/intro/1.png %}
+<!--more-->
+####为什么是它呢？因为它支持Linux系统，Markdown编辑器有很多，有很多好用的在线编辑器，但是在网络支持不好的时候，有一款顺手的软件是极好的！支持Linux系统的软件貌似就三个。[Haroopad](http://pad.haroopress.com/user.html)是其中功能比较全面的一款！软件是个韩国人开发的，对中文的支持很好，所以就是它了！
+####以前就找到了这个软件，可能是因为GFW的原因，软件主页提供的下载无法打开，貌似软件是在Dropbox的，费了好大劲下载下来，安装的时候现实的是依赖包已满足，但是安装完成之后却打不开，刚开始太笨了，以为是我的linux版本不对呢，然后就卸载了，最近又把它找出来，想再安装一次试试，装完了依然打不开！
+####突然想起来可以在终端敲命令试试看能不能启动，或者看看有什么错误信息，果然在终端输入`haroopad`之后，显示一个动态库`libudev.so.0`找不到：
+{%img http://yusan.qiniudn.com/2014-06-10%2010:50:05%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png %}
+####然后百度了一下，找到有类似的情况，看了看，原来很简单的!
+####在终端输入``locate udev.so``看看这个库文件到底有木有呢？
+{%img http://yusan.qiniudn.com/2014-06-10%2010:52:17%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png %}
+####发现系统里面的文件名跟`haroopad`要加载的库文件名称不同，创建一个新的软链接到这个库即可！在终端输入下面的命令，输入密码执行完成：
+    sudo ln -s /lib/x86_64-linux-gnu/libudev.so.1 /lib/x86_64-linux-gnu/libudev.so.0
+然后再输入`haroopad`，成功地打开了！
+{%img http://yusan.qiniudn.com/2014-06-10%2010:54:39%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png %}
+####之后从软件列表打开软件也可以了，完成！
+{%img http://yusan.qiniudn.com/2014-06-10%2013:11:17%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png %}
+####{%highlight 软件下载[64位的](http://pan.baidu.com/s/1jGMbj1s) %}

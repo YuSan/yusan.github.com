@@ -25,7 +25,7 @@ categories: software
     sudo cp sublime_text.desktop  /usr/share/applications/.
 {% img http://yusan.qiniudn.com/blog2014-05-24%2022:22:38%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png '输入中文' %}
 
-{%ribbonp info FFmpeg%}
+{%ribbonp warning 提示:%}
 如果按照上述步骤做完了还是不能在`Sublime`输入中文，试试安装`gtk+-2.0`
 {%endribbonp%}
     sudo apt-get install gtk+-2.0
