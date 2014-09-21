@@ -9,7 +9,8 @@
   <meta name="author" content="雨伞先生">
 
   
-  <meta name="description" content="今天配置好了系统，然后想把octopress也重新搞好，在执行bundle install时出现了下面的错误 于是上网找解决办法，差不多找到了类似的问题，下面有解决的办法，按照那个说的搞定了，顺便写下来记录一下! 即安装ruby-dev版本，终端执行： sudo apt-get install &hellip;">
+  <meta name="description" content="今天配置好了系统，然后想把octopress也重新搞好，在执行bundle install时出现了下面的错误 ####于是上网找解决办法，差不多找到了类似的问题，下面有解决的办法，按照那个说的搞定了，顺便写下来记录一下!
+####即安装ruby-dev版本，终端执行： sudo apt-get &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -32,6 +33,39 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
+
+
+	<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 
@@ -106,23 +140,14 @@
   </header>
 
 
-<div class="entry-content"><h4>今天配置好了系统，然后想把<code>octopress</code>也重新搞好，在执行<code>bundle install</code>时出现了下面的错误</h4>
-
+<div class="entry-content"><h4 id="octopressbundle-install">今天配置好了系统，然后想把<code>octopress</code>也重新搞好，在执行<code>bundle install</code>时出现了下面的错误</h4>
 <!--more-->
-
-
-<p><img src="http://yusan.qiniudn.com/2014-05-27%2019:49:17%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" title="'bundle install'" ></p>
-
-<h4>于是上网找解决办法，差不多找到了<a href="http://tarashish.com/blog/2013/02/02/fixing-mkmf-load-error-ubuntu/">类似的问题</a>，下面有解决的办法，按照那个说的搞定了，顺便写下来记录一下!</h4>
-
-<h4>即安装ruby-dev版本，终端执行：</h4>
-
-<pre><code>sudo apt-get install ruby1.9.1-dev
-</code></pre>
-
-<p><img src="http://yusan.qiniudn.com/2014-05-27%2019:49:33%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" title="‘install ruby-dev'" ></p>
-
-<h4>问题解决！</h4>
+<p><img src="http://yusan.qiniudn.com/2014-05-27%2019:49:17%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" title="'bundle install'" />
+####于是上网找解决办法，差不多找到了<a href="http://tarashish.com/blog/2013/02/02/fixing-mkmf-load-error-ubuntu/">类似的问题</a>，下面有解决的办法，按照那个说的搞定了，顺便写下来记录一下!
+####即安装ruby-dev版本，终端执行：
+    sudo apt-get install ruby1.9.1-dev
+<img src="http://yusan.qiniudn.com/2014-05-27%2019:49:33%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" title="‘install ruby-dev'" />
+####问题解决！</p>
 </div>
 
 
@@ -181,29 +206,8 @@
   
     <section>
 <h1>QR-Code<abbr title="The word 'QR Code' is a registered trademark of DENSO WAVE INCORPORATED. It applies only for the word 'QR Code', not for image.">&trade;</abbr></h1>
-<a href="http://YuSan.github.io/blog/2014/05/27/bundle-install-problem/"><img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=|0&chco=165B94&chl=http://YuSan.github.io/blog/2014/05/27/bundle-install-problem/" alt="post-qrcode"></a></section><section>
-  <h1>文章分类</h1>
-  <ul id="categories">
-    <li class='category'><a href='/blog/categories/baiduyun/'>BaiDuYun (1)</a></li>
-<li class='category'><a href='/blog/categories/bird-xl100/'>Bird_XL100 (3)</a></li>
-<li class='category'><a href='/blog/categories/galapad-s6/'>GALAPAD_S6 (10)</a></li>
-<li class='category'><a href='/blog/categories/keleui/'>KeLeUI (1)</a></li>
-<li class='category'><a href='/blog/categories/lewa-os5/'>LeWa-OS5 (7)</a></li>
-<li class='category'><a href='/blog/categories/linux/'>Linux (3)</a></li>
-<li class='category'><a href='/blog/categories/miui-v5/'>MIUI_V5 (1)</a></li>
-<li class='category'><a href='/blog/categories/markdown/'>Markdown (1)</a></li>
-<li class='category'><a href='/blog/categories/recovery/'>Recovery (4)</a></li>
-<li class='category'><a href='/blog/categories/rom/'>Rom (10)</a></li>
-<li class='category'><a href='/blog/categories/shell/'>Shell (1)</a></li>
-<li class='category'><a href='/blog/categories/skill/'>Skill (1)</a></li>
-<li class='category'><a href='/blog/categories/misc/'>misc (1)</a></li>
-<li class='category'><a href='/blog/categories/octopress/'>octopress (2)</a></li>
-<li class='category'><a href='/blog/categories/software/'>software (2)</a></li>
-
-  </ul>
-</section>
-<section id="titles">
-  <a href="http://YuSan.github.io" title="YuSan's Blog"><img id="logo" src="http://YuSan.github.io/images/" /></a>
+<a href="http://YuSan.github.io/blog/2014/05/27/bundle-install-problem/"><img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=|0&chco=165B94&chl=http://YuSan.github.io/blog/2014/05/27/bundle-install-problem/" alt="post-qrcode"></a></section><section id="titles">
+  <a href="http://YuSan.github.io" title="YuSan's Blog"><img id="logo" src="http://YuSan.github.io/images/yusan.png" /></a>
   <h1 id="site_title"><a href="http://YuSan.github.io" title="YuSan's Blog">YuSan's Blog</a></h1>
   <h3 id="site_subtitle">记录......</h3>
 </section>

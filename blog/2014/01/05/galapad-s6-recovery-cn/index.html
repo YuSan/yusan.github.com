@@ -9,8 +9,11 @@
   <meta name="author" content="雨伞先生">
 
   
-  <meta name="description" content="【免责申明】: 本Recovery已在机器测试通过,纯属个人兴趣自制,非官方recovery；
-请务必保证电池电量在60％以上并保证刷机过程中电脑不会断电； 刷机有风险，请仔细阅读相关的刷机教程并自行承担刷机风险，本人不对任何刷机失败承担任何责任； &hellip;">
+  <meta name="description" content="【免责申明】:
+———
+* 本Recovery已在机器测试通过,纯属个人兴趣自制,非官方recovery；
+* 请务必保证电池电量在60％以上并保证刷机过程中电脑不会断电； * 刷机有风险，请仔细阅读相关的刷机教程并自行承担刷机风险，本人不对任何刷机失败承担任何责任；
+* &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -33,6 +36,39 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
+
+
+	<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 
@@ -108,59 +144,57 @@
 
 
 <div class="entry-content"><hr />
-
-<h2>【免责申明】:</h2>
-
-<ul>
-<li>本Recovery已在机器测试通过,纯属个人兴趣自制,非官方recovery；</li>
-<li>请务必保证电池电量在60％以上并保证刷机过程中电脑不会断电；</li>
-</ul>
-
-
+<p>【免责申明】:
+———
+* 本Recovery已在机器测试通过,纯属个人兴趣自制,非官方recovery；
+*  请务必保证电池电量在60％以上并保证刷机过程中电脑不会断电；
 <!--more-->
+* 刷机有风险，请仔细阅读相关的刷机教程并自行承担刷机风险，本人不对任何刷机失败承担任何责任；
+* 如果您在此recovery的基础上修复了某些尚未发现的Bug，并提出改善建议，建议继续公开和分享您的工作成果；
+* 本人特此申明对recovery之使用不提供任何保证，不对任何用户保证本recovery的适用性，不保证无故障产生；亦不对任何用     户使用此recovery所遭遇到的任何理论上的或实际上的损失承担责任；
+* 刷此recovery引起的保修失效、变砖等问题不在此recovery发布人可以解决的问题范围之内；
+* 如果您使用本recovery，即表示已经默认接受了此协议 .
+【鸣谢】：
+———
+* 感谢大神们在github上无偿贡献的代码；</p>
 
+<h2 id="section">【功能简介】：</h2>
+<blockquote>
+  <p>1.基于CWM_Recovery6037源码编制作，并完全汉化 ;</p>
+</blockquote>
 
-<ul>
-<li>刷机有风险，请仔细阅读相关的刷机教程并自行承担刷机风险，本人不对任何刷机失败承担任何责任；</li>
-<li>如果您在此recovery的基础上修复了某些尚未发现的Bug，并提出改善建议，建议继续公开和分享您的工作成果；</li>
-<li>本人特此申明对recovery之使用不提供任何保证，不对任何用户保证本recovery的适用性，不保证无故障产生；亦不对任何用     户使用此recovery所遭遇到的任何理论上的或实际上的损失承担责任；</li>
-<li>刷此recovery引起的保修失效、变砖等问题不在此recovery发布人可以解决的问题范围之内；</li>
-<li>如果您使用本recovery，即表示已经默认接受了此协议 .
-【鸣谢】：</li>
-</ul>
+<blockquote>
+  <p>2.采用全新汉化字库，大字体，界面更清晰；</p>
+</blockquote>
 
+<blockquote>
+  <p>3.完美支持 ADB Sideload 命令推送刷机包；</p>
+</blockquote>
 
-<hr />
+<blockquote>
+  <p>4.完美支持备份和恢复系统（支持tar、dup、tgz三种备份格式，都可完全恢复）</p>
+</blockquote>
 
-<ul>
-<li>感谢大神们在github上无偿贡献的代码；</li>
-</ul>
+<blockquote>
+  <p>5.支持挂载U盘</p>
+</blockquote>
 
+<blockquote>
+  <p>6.支持开启彩虹界面（从上到下按5次可开启或关闭彩虹模式）</p>
+</blockquote>
 
-<h2>【功能简介】：</h2>
+<blockquote>
+  <p>7.支持时间及电池电量显示</p>
+</blockquote>
 
-<blockquote><p>1.基于CWM_Recovery6037源码编制作，并完全汉化 ;</p>
+<blockquote>
+  <p>8.支持官方OTA升级，支持刷入官方包！</p>
+</blockquote>
 
-<p>2.采用全新汉化字库，大字体，界面更清晰；</p>
-
-<p>3.完美支持 ADB Sideload 命令推送刷机包；</p>
-
-<p>4.完美支持备份和恢复系统（支持tar、dup、tgz三种备份格式，都可完全恢复）</p>
-
-<p>5.支持挂载U盘</p>
-
-<p>6.支持开启彩虹界面（从上到下按5次可开启或关闭彩虹模式）</p>
-
-<p>7.支持时间及电池电量显示</p>
-
-<p>8.支持官方OTA升级，支持刷入官方包！</p></blockquote>
-
-<h2>【图片展示】：</h2>
-
+<h2 id="section-1">【图片展示】：</h2>
 <p><img src="http://ntu.me/di/1ZJ41/01.jpg" alt="" /></p>
 
-<h2>【下载】：</h2>
-
+<h2 id="section-2">【下载】：</h2>
 <p><a href="http://pan.baidu.com/s/1hqeGPFm">点我下载</a></p>
 </div>
 
@@ -220,29 +254,8 @@
   
     <section>
 <h1>QR-Code<abbr title="The word 'QR Code' is a registered trademark of DENSO WAVE INCORPORATED. It applies only for the word 'QR Code', not for image.">&trade;</abbr></h1>
-<a href="http://YuSan.github.io/blog/2014/01/05/galapad-s6-recovery-cn/"><img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=|0&chco=165B94&chl=http://YuSan.github.io/blog/2014/01/05/galapad-s6-recovery-cn/" alt="post-qrcode"></a></section><section>
-  <h1>文章分类</h1>
-  <ul id="categories">
-    <li class='category'><a href='/blog/categories/baiduyun/'>BaiDuYun (1)</a></li>
-<li class='category'><a href='/blog/categories/bird-xl100/'>Bird_XL100 (3)</a></li>
-<li class='category'><a href='/blog/categories/galapad-s6/'>GALAPAD_S6 (10)</a></li>
-<li class='category'><a href='/blog/categories/keleui/'>KeLeUI (1)</a></li>
-<li class='category'><a href='/blog/categories/lewa-os5/'>LeWa-OS5 (7)</a></li>
-<li class='category'><a href='/blog/categories/linux/'>Linux (3)</a></li>
-<li class='category'><a href='/blog/categories/miui-v5/'>MIUI_V5 (1)</a></li>
-<li class='category'><a href='/blog/categories/markdown/'>Markdown (1)</a></li>
-<li class='category'><a href='/blog/categories/recovery/'>Recovery (4)</a></li>
-<li class='category'><a href='/blog/categories/rom/'>Rom (10)</a></li>
-<li class='category'><a href='/blog/categories/shell/'>Shell (1)</a></li>
-<li class='category'><a href='/blog/categories/skill/'>Skill (1)</a></li>
-<li class='category'><a href='/blog/categories/misc/'>misc (1)</a></li>
-<li class='category'><a href='/blog/categories/octopress/'>octopress (2)</a></li>
-<li class='category'><a href='/blog/categories/software/'>software (2)</a></li>
-
-  </ul>
-</section>
-<section id="titles">
-  <a href="http://YuSan.github.io" title="YuSan's Blog"><img id="logo" src="http://YuSan.github.io/images/" /></a>
+<a href="http://YuSan.github.io/blog/2014/01/05/galapad-s6-recovery-cn/"><img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=|0&chco=165B94&chl=http://YuSan.github.io/blog/2014/01/05/galapad-s6-recovery-cn/" alt="post-qrcode"></a></section><section id="titles">
+  <a href="http://YuSan.github.io" title="YuSan's Blog"><img id="logo" src="http://YuSan.github.io/images/yusan.png" /></a>
   <h1 id="site_title"><a href="http://YuSan.github.io" title="YuSan's Blog">YuSan's Blog</a></h1>
   <h3 id="site_subtitle">记录......</h3>
 </section>

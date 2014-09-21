@@ -9,7 +9,7 @@
   <meta name="author" content="雨伞先生">
 
   
-  <meta name="description" content="Sublime_text，一个跨平台的代码编辑器。刚买电脑的时候在网上看到然后安装过，因为功能强大，作为小白的我看了看然后就卸载了，因为我不会用！那时候是在Windows下，我还有别的编辑器可以用，比如Notepad++，还有Emediter等软件都是不错的。 后来因为想学点安卓的东西， &hellip;">
+  <meta name="description" content="####Sublime_text，一个跨平台的代码编辑器。刚买电脑的时候在网上看到然后安装过，因为功能强大，作为小白的我看了看然后就卸载了，因为我不会用！那时候是在Windows下，我还有别的编辑器可以用，比如Notepad++，还有Emediter等软件都是不错的。 #### &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -32,6 +32,39 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
+
+
+	<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 
@@ -106,56 +139,30 @@
   </header>
 
 
-<div class="entry-content"><p><img class="left" src="http://yusan.qiniudn.com/blog2014-05-24%2020:18:38%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" width="270" height="260" title="'sublime_text 3059'" ></p>
-
-<h4><code>Sublime_text</code>，一个跨平台的代码编辑器。刚买电脑的时候在网上看到然后安装过，因为功能强大，作为小白的我看了看然后就卸载了，因为我不会用！那时候是在<code>Windows</code>下，我还有别的编辑器可以用，比如Notepad++，还有Emediter等软件都是不错的。</h4>
-
+<div class="entry-content"><p><img class="left" src="http://yusan.qiniudn.com/blog2014-05-24%2020:18:38%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" width="270" height="260" title="'sublime_text 3059'" />
+####<code>Sublime_text</code>，一个跨平台的代码编辑器。刚买电脑的时候在网上看到然后安装过，因为功能强大，作为小白的我看了看然后就卸载了，因为我不会用！那时候是在<code>Windows</code>下，我还有别的编辑器可以用，比如Notepad++，还有Emediter等软件都是不错的。
 <!--more-->
+####后来因为想学点安卓的东西，所以装了linux，一直小白的我不会用vim和Emacs，就用系统自带的<code>gedit</code>，觉得还是很好的，因为很多代码都支持高亮的。
+####再后来想看 <strong>smali</strong> 文件,所以想找个好用的编辑器来高亮显示代码，所以找啊找，最后又找到了<code>Sublime_Text</code>，因为它支持插件，可以安装插件来支持 <strong>smali</strong> 代码高亮显示.
+<img src="http://yusan.qiniudn.com/blog2014-05-24%2020:37:49%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" title="'smali代码高亮显示'" />
+软件安装：
+—-
+####Sublime_text的下载和安装挺简单的，直接到<a href="http://www.sublimetext.com/">Sublime Text官网</a>选择下载即可！或者直接下载<span class="fluo">Sublime_Text 3(Build 3059)</span>:<a href="http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3059_i386.deb">32bit</a>|<a href="http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3059_amd64.deb">64bit</a>。然后在终端执行下面的命令安装即可！
+    sudo dpkg -i *.deb
+软件破解：
+—-
+####因为软件是收费的（可以无限期试用），所以又找了一下破解，在<a href="http://bbs.pediy.com/showthread.php?t=182774">看雪论坛</a>上有破解的帖子，下载破解文件(<a href="http://yun.baidu.com/share/link?shareid=3756674317&amp;uk=2986591212">32bit</a>|<a href="http://yun.baidu.com/share/link?shareid=3762073257&amp;uk=2986591212">64bit</a>)更面并替换原来安装的文件即可破解！安装文件路径在 <strong>/opt/sublime_text/</strong> 下。
+解决中文输入：
+—-
+####然后还有一个很头疼的问题就是在Sublime_text里面无法输入中文，为了解决这个问题，找了好久，最后成功了：下载此<a href="http://yusan.qiniudn.com/Sublime_Text_imfix.tar">文件</a>,解压文件到任意路径，并复制库文件到安装路径<code>/opt/sublime_text/</code>下，然后将Desktop文件复制到<code>/usr/share/applications/</code>替换里面的文件
+    sudo cp libsublime-imfix.so /opt/sublime_text/.
+    sudo cp sublime_text.desktop  /usr/share/applications/.
+<img src="http://yusan.qiniudn.com/blog2014-05-24%2022:22:38%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" title="'输入中文'" /></p>
 
-
-<h4>后来因为想学点安卓的东西，所以装了linux，一直小白的我不会用vim和Emacs，就用系统自带的<code>gedit</code>，觉得还是很好的，因为很多代码都支持高亮的。</h4>
-
-<h4>再后来想看 <strong>smali</strong> 文件,所以想找个好用的编辑器来高亮显示代码，所以找啊找，最后又找到了<code>Sublime_Text</code>，因为它支持插件，可以安装插件来支持 <strong>smali</strong> 代码高亮显示.</h4>
-
-<p><img src="http://yusan.qiniudn.com/blog2014-05-24%2020:37:49%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" title="'smali代码高亮显示'" ></p>
-
-<h2>软件安装：</h2>
-
-<h4>Sublime_text的下载和安装挺简单的，直接到<a href="http://www.sublimetext.com/">Sublime Text官网</a>选择下载即可！或者直接下载<span class="fluo">Sublime_Text 3(Build 3059)</span>:<a href="http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3059_i386.deb">32bit</a>|<a href="http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3059_amd64.deb">64bit</a>。然后在终端执行下面的命令安装即可！</h4>
-
-<pre><code>sudo dpkg -i *.deb
+<p class="info warning" data-title="提示:">如果按照上述步骤做完了还是不能在`Sublime`输入中文，试试安装`gtk+-2.0`</p>
+<pre><code>sudo apt-get install gtk+-2.0 &lt;img src="http://yusan.qiniudn.com/2014-05-27%2022:20:56%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" title="'安装gtk+-2.0'" &gt; 在终端打开： ---- ####解决了中文输入的问题之后，就可以正常使用了。但是怎么让sublime_text在终端可以执行命令打开呢？又百度了一下：在 **/usr/bin/** 下建立它的链接即可，在终端执行下面的命令即可：
+sudo ln -s /opt/sublime_text/sublime_text /usr/bin/sublime ####这样就可以直接在终端输入``sublime``命令打开Sublime_Text编辑器了！
 </code></pre>
-
-<h2>软件破解：</h2>
-
-<h4>因为软件是收费的（可以无限期试用），所以又找了一下破解，在<a href="http://bbs.pediy.com/showthread.php?t=182774">看雪论坛</a>上有破解的帖子，下载破解文件(<a href="http://yun.baidu.com/share/link?shareid=3756674317&amp;uk=2986591212">32bit</a>|<a href="http://yun.baidu.com/share/link?shareid=3762073257&amp;uk=2986591212">64bit</a>)更面并替换原来安装的文件即可破解！安装文件路径在 <strong>/opt/sublime_text/</strong> 下。</h4>
-
-<h2>解决中文输入：</h2>
-
-<h4>然后还有一个很头疼的问题就是在Sublime_text里面无法输入中文，为了解决这个问题，找了好久，最后成功了：下载此<a href="http://yusan.qiniudn.com/Sublime_Text_imfix.tar">文件</a>,解压文件到任意路径，并复制库文件到安装路径<code>/opt/sublime_text/</code>下，然后将Desktop文件复制到<code>/usr/share/applications/</code>替换里面的文件</h4>
-
-<pre><code>sudo cp libsublime-imfix.so /opt/sublime_text/.
-sudo cp sublime_text.desktop  /usr/share/applications/.
-</code></pre>
-
-<p><img src="http://yusan.qiniudn.com/blog2014-05-24%2022:22:38%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" title="'输入中文'" ></p>
-
-<p class='info warning' data-title='提示:'>如果按照上述步骤做完了还是不能在`Sublime`输入中文，试试安装`gtk+-2.0`</p>
-
-
-<pre><code>sudo apt-get install gtk+-2.0
-</code></pre>
-
-<p><img src="http://yusan.qiniudn.com/2014-05-27%2022:20:56%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" title="'安装gtk+-2.0'" ></p>
-
-<h2>在终端打开：</h2>
-
-<h4>解决了中文输入的问题之后，就可以正常使用了。但是怎么让sublime_text在终端可以执行命令打开呢？又百度了一下：在 <strong>/usr/bin/</strong> 下建立它的链接即可，在终端执行下面的命令即可：</h4>
-
-<pre><code>sudo ln -s /opt/sublime_text/sublime_text /usr/bin/sublime
-</code></pre>
-
-<h4>这样就可以直接在终端输入<code>sublime</code>命令打开Sublime_Text编辑器了！</h4>
 </div>
 
 
@@ -214,29 +221,8 @@ sudo cp sublime_text.desktop  /usr/share/applications/.
   
     <section>
 <h1>QR-Code<abbr title="The word 'QR Code' is a registered trademark of DENSO WAVE INCORPORATED. It applies only for the word 'QR Code', not for image.">&trade;</abbr></h1>
-<a href="http://YuSan.github.io/blog/2014/05/24/sublime-text/"><img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=|0&chco=165B94&chl=http://YuSan.github.io/blog/2014/05/24/sublime-text/" alt="post-qrcode"></a></section><section>
-  <h1>文章分类</h1>
-  <ul id="categories">
-    <li class='category'><a href='/blog/categories/baiduyun/'>BaiDuYun (1)</a></li>
-<li class='category'><a href='/blog/categories/bird-xl100/'>Bird_XL100 (3)</a></li>
-<li class='category'><a href='/blog/categories/galapad-s6/'>GALAPAD_S6 (10)</a></li>
-<li class='category'><a href='/blog/categories/keleui/'>KeLeUI (1)</a></li>
-<li class='category'><a href='/blog/categories/lewa-os5/'>LeWa-OS5 (7)</a></li>
-<li class='category'><a href='/blog/categories/linux/'>Linux (3)</a></li>
-<li class='category'><a href='/blog/categories/miui-v5/'>MIUI_V5 (1)</a></li>
-<li class='category'><a href='/blog/categories/markdown/'>Markdown (1)</a></li>
-<li class='category'><a href='/blog/categories/recovery/'>Recovery (4)</a></li>
-<li class='category'><a href='/blog/categories/rom/'>Rom (10)</a></li>
-<li class='category'><a href='/blog/categories/shell/'>Shell (1)</a></li>
-<li class='category'><a href='/blog/categories/skill/'>Skill (1)</a></li>
-<li class='category'><a href='/blog/categories/misc/'>misc (1)</a></li>
-<li class='category'><a href='/blog/categories/octopress/'>octopress (2)</a></li>
-<li class='category'><a href='/blog/categories/software/'>software (2)</a></li>
-
-  </ul>
-</section>
-<section id="titles">
-  <a href="http://YuSan.github.io" title="YuSan's Blog"><img id="logo" src="http://YuSan.github.io/images/" /></a>
+<a href="http://YuSan.github.io/blog/2014/05/24/sublime-text/"><img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=|0&chco=165B94&chl=http://YuSan.github.io/blog/2014/05/24/sublime-text/" alt="post-qrcode"></a></section><section id="titles">
+  <a href="http://YuSan.github.io" title="YuSan's Blog"><img id="logo" src="http://YuSan.github.io/images/yusan.png" /></a>
   <h1 id="site_title"><a href="http://YuSan.github.io" title="YuSan's Blog">YuSan's Blog</a></h1>
   <h3 id="site_subtitle">记录......</h3>
 </section>

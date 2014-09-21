@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | YuSan's Blog]]></title>
   <link href="http://YuSan.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://YuSan.github.io/"/>
-  <updated>2014-09-21T21:51:50+08:00</updated>
+  <updated>2014-09-21T22:15:51+08:00</updated>
   <id>http://YuSan.github.io/</id>
   <author>
     <name><![CDATA[雨伞先生]]></name>
@@ -18,23 +18,14 @@
     <link href="http://YuSan.github.io/blog/2014/05/27/bundle-install-problem/"/>
     <updated>2014-05-27T19:50:49+08:00</updated>
     <id>http://YuSan.github.io/blog/2014/05/27/bundle-install-problem</id>
-    <content type="html"><![CDATA[<h4>今天配置好了系统，然后想把<code>octopress</code>也重新搞好，在执行<code>bundle install</code>时出现了下面的错误</h4>
-
+    <content type="html"><![CDATA[<h4 id="octopressbundle-install">今天配置好了系统，然后想把<code>octopress</code>也重新搞好，在执行<code>bundle install</code>时出现了下面的错误</h4>
 <!--more-->
-
-
-<p><img class="<a" src="href="http://yusan.qiniudn.com/2014-05-27%2019:49:17%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png">http://yusan.qiniudn.com/2014-05-27%2019:49:17%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png</a>" title="&lsquo;bundle install&rsquo;" ></p>
-
-<h4>于是上网找解决办法，差不多找到了<a href="http://tarashish.com/blog/2013/02/02/fixing-mkmf-load-error-ubuntu/">类似的问题</a>，下面有解决的办法，按照那个说的搞定了，顺便写下来记录一下!</h4>
-
-<h4>即安装ruby-dev版本，终端执行：</h4>
-
-<pre><code>sudo apt-get install ruby1.9.1-dev
-</code></pre>
-
-<p><img class="<a" src="href="http://yusan.qiniudn.com/2014-05-27%2019:49:33%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png">http://yusan.qiniudn.com/2014-05-27%2019:49:33%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png</a>" title="‘install ruby-dev'" ></p>
-
-<h4>问题解决！</h4>
+<p><img src="http://yusan.qiniudn.com/2014-05-27%2019:49:17%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" title="‘bundle install’" >
+####于是上网找解决办法，差不多找到了<a href="http://tarashish.com/blog/2013/02/02/fixing-mkmf-load-error-ubuntu/">类似的问题</a>，下面有解决的办法，按照那个说的搞定了，顺便写下来记录一下!
+####即安装ruby-dev版本，终端执行：
+    sudo apt-get install ruby1.9.1-dev
+<img src="http://yusan.qiniudn.com/2014-05-27%2019:49:33%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" title="‘install ruby-dev’" >
+####问题解决！</p>
 ]]></content>
   </entry>
   
@@ -44,30 +35,31 @@
     <updated>2013-12-10T22:37:00+08:00</updated>
     <id>http://YuSan.github.io/blog/2013/12/10/zai-duo-tai-ji-zi-shang-xie-octopressbo-ke</id>
     <content type="html"><![CDATA[<hr />
-
-<h4>因为电脑装的双系统，有时候需要切换使用，为了方便写博客，在两个系统下面都搞好了环境，可是切换系统之后因为源码不一致，会出错，so，百度之～～</h4>
-
+<p>####因为电脑装的双系统，有时候需要切换使用，为了方便写博客，在两个系统下面都搞好了环境，可是切换系统之后因为源码不一致，会出错，so，百度之～～
 <!--more-->
-
+* Octopress的git仓库(repository)有两个分支，分别是master和source。</p>
 
 <ul>
-<li><p>Octopress的git仓库(repository)有两个分支，分别是master和source。</p></li>
-<li><p>master存储的是博客网站本身，而source存储的是生成博客的源文件。</p></li>
-<li><p>master的内容放在根目录的_deploy文件夹内，当你push源文件时会忽略，它使用的是rake deploy命令来更新的。</p></li>
-<li><p>如果几台电脑上面都配置好了Otcopress，要在其中一台上写博客,需要进行同步，更新source仓库即可。更新master并不是必须的，因为更改源文件之后还是需要rake generate，这个时候会自动进行 master更新。</p></li>
+  <li>
+    <p>master存储的是博客网站本身，而source存储的是生成博客的源文件。</p>
+  </li>
+  <li>
+    <p>master的内容放在根目录的_deploy文件夹内，当你push源文件时会忽略，它使用的是rake deploy命令来更新的。</p>
+  </li>
+  <li>
+    <p>如果几台电脑上面都配置好了Otcopress，要在其中一台上写博客,需要进行同步，更新source仓库即可。更新master并不是必须的，因为更改源文件之后还是需要rake generate，这个时候会自动进行 master更新。</p>
+  </li>
 </ul>
 
-
-<p>```bash
+<p><code>bash
 cd your_local_octopress_directory
 cd _deploy
-git pull origin master   # update the local master branch
+git pull origin master   # update the local master branch 
 cd ..
-git pull origin source   # update the local source branch</p>
-
-<h2>```</h2>
-
-<h5>参考文章：1、<a href="http://gangmax.me/blog/2011/11/24/setup-local-environment-for-an-existing-octopress-instance-on-github/">Blog of GangMax</a>  2、<a href="http://blog.csdn.net/hankai1024/article/details/12786201">HAN Kai</a></h5>
+git pull origin source   # update the local source branch  
+</code>
+————————————————–
+##### 参考文章：1、<a href="http://gangmax.me/blog/2011/11/24/setup-local-environment-for-an-existing-octopress-instance-on-github/">Blog of GangMax</a>  2、<a href="http://blog.csdn.net/hankai1024/article/details/12786201">HAN Kai</a></p>
 ]]></content>
   </entry>
   

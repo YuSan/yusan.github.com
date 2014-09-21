@@ -34,6 +34,39 @@
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
 
 
+	<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
 
 
   
@@ -116,29 +149,8 @@
   
     <section>
 <h1>QR-Code<abbr title="The word 'QR Code' is a registered trademark of DENSO WAVE INCORPORATED. It applies only for the word 'QR Code', not for image.">&trade;</abbr></h1>
-<a href="http://YuSan.github.ioblog/categories/skill/index.html"><img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=|0&chco=165B94&chl=http://YuSan.github.ioblog/categories/skill/index.html" alt="post-qrcode"></a></section><section>
-  <h1>文章分类</h1>
-  <ul id="categories">
-    <li class='category'><a href='/blog/categories/baiduyun/'>BaiDuYun (1)</a></li>
-<li class='category'><a href='/blog/categories/bird-xl100/'>Bird_XL100 (3)</a></li>
-<li class='category'><a href='/blog/categories/galapad-s6/'>GALAPAD_S6 (10)</a></li>
-<li class='category'><a href='/blog/categories/keleui/'>KeLeUI (1)</a></li>
-<li class='category'><a href='/blog/categories/lewa-os5/'>LeWa-OS5 (7)</a></li>
-<li class='category'><a href='/blog/categories/linux/'>Linux (3)</a></li>
-<li class='category'><a href='/blog/categories/miui-v5/'>MIUI_V5 (1)</a></li>
-<li class='category'><a href='/blog/categories/markdown/'>Markdown (1)</a></li>
-<li class='category'><a href='/blog/categories/recovery/'>Recovery (4)</a></li>
-<li class='category'><a href='/blog/categories/rom/'>Rom (10)</a></li>
-<li class='category'><a href='/blog/categories/shell/'>Shell (1)</a></li>
-<li class='category'><a href='/blog/categories/skill/'>Skill (1)</a></li>
-<li class='category'><a href='/blog/categories/misc/'>misc (1)</a></li>
-<li class='category'><a href='/blog/categories/octopress/'>octopress (2)</a></li>
-<li class='category'><a href='/blog/categories/software/'>software (2)</a></li>
-
-  </ul>
-</section>
-<section id="titles">
-  <a href="http://YuSan.github.io" title="YuSan's Blog"><img id="logo" src="http://YuSan.github.io/images/" /></a>
+<a href="http://YuSan.github.ioblog/categories/skill/index.html"><img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=|0&chco=165B94&chl=http://YuSan.github.ioblog/categories/skill/index.html" alt="post-qrcode"></a></section><section id="titles">
+  <a href="http://YuSan.github.io" title="YuSan's Blog"><img id="logo" src="http://YuSan.github.io/images/yusan.png" /></a>
   <h1 id="site_title"><a href="http://YuSan.github.io" title="YuSan's Blog">YuSan's Blog</a></h1>
   <h3 id="site_subtitle">记录......</h3>
 </section>

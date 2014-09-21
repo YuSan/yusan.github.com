@@ -9,8 +9,9 @@
   <meta name="author" content="雨伞先生">
 
   
-  <meta name="description" content="这个视频貌似是去年在一个朋友的请求之下录的，然后传到网盘分享给他了，之后也忘了～～ 最近电脑硬盘空间有点紧缺，于是整理文件又发现了这个～～
-因为录的源文件是rmvb格式的，居然有1G多，所以下载了格式工厂进行了转码，转为avi格式大小变为了200多M，打开看了一下，清晰度依然很好，完全没有被压缩 &hellip;">
+  <meta name="description" content="这个视频貌似是去年在一个朋友的请求之下录的，然后传到网盘分享给他了，之后也忘了～～ —
+最近电脑硬盘空间有点紧缺，于是整理文件又发现了这个～～
+因为录的源文件是rmvb格式的，居然有1G多，所以下载了格式工厂进行了转码，转为avi格式大小变为了200多M，打开看了一下，清晰度依然很好， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -33,6 +34,39 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
+
+
+	<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 
@@ -109,19 +143,16 @@
 
 <div class="entry-content"><hr />
 
-<p><strong>这个视频貌似是去年在一个朋友的请求之下录的，然后传到网盘分享给他了，之后也忘了～～</strong></p>
-
+<p><strong>这个视频貌似是去年在一个朋友的请求之下录的，然后传到网盘分享给他了，之后也忘了～～</strong>
 <!--more-->
+—
+<strong>最近电脑硬盘空间有点紧缺，于是整理文件又发现了这个～～
+因为录的源文件是rmvb格式的，居然有1G多，所以下载了格式工厂进行了转码，转为avi格式大小变为了200多M，打开看了一下，清晰度依然很好，完全没有被压缩，现在重新上传到百度网盘，分享给有需要的人（也许有人需要吧～～）</strong>
+##说明：</p>
 
-
-<hr />
-
-<p><strong>最近电脑硬盘空间有点紧缺，于是整理文件又发现了这个～～
-因为录的源文件是rmvb格式的，居然有1G多，所以下载了格式工厂进行了转码，转为avi格式大小变为了200多M，打开看了一下，清晰度依然很好，完全没有被压缩，现在重新上传到百度网盘，分享给有需要的人（也许有人需要吧～～）</strong></p>
-
-<h2>说明：</h2>
-
-<blockquote><p>这里面主要是说recovery编译的，至于前期的如何装系统，装什么系统，怎么配置环境，怎么下载源码等等的请自行百度，网上都有，并且是很详细的教程，甚至是傻瓜式的一键配置脚本等等！</p></blockquote>
+<blockquote>
+  <p>这里面主要是说recovery编译的，至于前期的如何装系统，装什么系统，怎么配置环境，怎么下载源码等等的请自行百度，网上都有，并且是很详细的教程，甚至是傻瓜式的一键配置脚本等等！</p>
+</blockquote>
 
 <p><strong>里面的文档也贴上来吧～～</strong></p>
 
@@ -129,124 +160,125 @@
 博客：yusan/github.com  （因为视频是去年录制的，那里面文档上的bolg地址是错的，因为我觉得不好，就把它给废了！）
 </code></pre>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'> 1. 同步cm10.1的源码，具体操作请百度之～～
-</span><span class='line'> 2. 打开终端，到源码目录下：
-</span><span class='line'>  <span class="nb">cd </span>Android/cm10.1                   //我的源码目录
-</span><span class='line'> 3. 如果不想使用cm10.1的英文源码，可以按如下操作获取我的recovery汉化源码：（如不需要，请直接下一步！）
-</span><span class='line'>  rm -rf bootable/recovery         //删除原来的cm10.1的recovery源码
-</span><span class='line'>  git clone git@github.com:APAR1992/CWM_Recovery_v6037_cn.git bootable/recovery      //获取我的recovery源码
-</span><span class='line'>    我有源码，就不执行上面这句了，直接复制一下～～
-</span><span class='line'> 4. 获取你的机子的recovery.img（原厂的或者别人编译的也行），具体请自己搞定，线刷包里面有，没有的自己想办法提取，
-</span><span class='line'>  这儿就不说了。为了方便，将名字改为你的机子的型号（eg：G6.img），然后将其放到主目录（~/G6.img）。
-</span><span class='line'>  放到其它目录也行，按自己情况随便放吧。
-</span><span class='line'> 5. 在源码目录执行如下语句生成 otatools ，下一步会用到：
-</span><span class='line'>  make otatools -j4       //注意空格，后面的 -j4 可以视你的电脑配置而定，电脑配置不行就不加或者 -j2 ,
-</span><span class='line'>  电脑配置好点呢就 -j8 或者 -j16 ，你可以试试，不过太大了电脑会卡死～～
-</span><span class='line'>  执行这步可能需要比较长的时间，有可能在1小时左右，请耐心等待（已经编译过的，请直接下一步！）
-</span><span class='line'>  otatools编译完成之后还需要把 out/host/linux-x86/bin 文件夹加入到环境变量中去，这个请百度一下吧，
-</span><span class='line'>  ubuntu直接在主目录下终端执行 gedit .bashrc ,打开修改就行了，网上都有，按情况添加就行了，其他linux版本可能没有
-</span><span class='line'>  ~/.bashrc 文件，可以加到/etc/environment 里面，都是一样的效果
-</span><span class='line'>  完了之后执行  <span class="nb">source</span> .bashrc <span class="o">(</span><span class="nb">source</span> /etc/environment<span class="o">)</span>  使修改生效，重启一下也是可以的～～百度都有，就不详细说了
-</span><span class='line'>
-</span><span class='line'>  我已经有了，所以这一步就不用执行了，跳过～～
-</span><span class='line'>
-</span><span class='line'> 6. 执行如下语句生成你的机型device：
-</span><span class='line'>  ./build/tools/device/mkvendor.sh XiaoCai G6 ~/G6.img      //（cpio: 归档非正常终止 ）不用管，mtk的就这样，不影响编译。
-</span><span class='line'>  请注意命令中的空格，不要打错！！！
-</span><span class='line'>  生成device文件了～～～好像没什么可说的～～
-</span><span class='line'>
-</span><span class='line'> 7. 修改你的机子的device，主要是改BoardConfig.mk ，因为只是编译recovery，所以稍微修改一下就可以了。
-</span><span class='line'>  可以打开 recovery/README.md 查看需要额外添加的语句。加上我上面加的那两句就行了，其他可以不用管。
-</span><span class='line'>  还有一个要改的就是分区表 recovery.fstab ，这个没法说清楚，请查看自己机子的分区对应修改！
-</span><span class='line'>
-</span><span class='line'>  可以看一下我给别的机子改的分区表，大概就那个样子，按照自己的机子分区改一下就行了～～
-</span><span class='line'>
-</span><span class='line'> 8. 然后就可以编译了，为了方便，可以在你的机型目录下新建一个 vendorsetup.sh 。并且在里面写上你的机型。
-</span><span class='line'>  打开你的机型文件夹，然后右键新建文档，改名 vendorsetup.sh ,打开修改，按情况在里面加上一句：
-</span><span class='line'>  add_lunch_combo cm_G6-eng 。下一步在lunch的时候就会有你的机型了。
-</span><span class='line'>
-</span><span class='line'> 9. 开始编译，执行如下命令：
-</span><span class='line'>  . build/envsetup.sh（或者 <span class="nb">source </span>build/envsetup.sh）        //执行这句很重要！   一般还是执行source build/envsetup.sh 这句吧
-</span><span class='line'>  lunch       // lunch，然后选择你的机型，输入序号即可
-</span><span class='line'>  make recoveryimage -j4      //注意空格，回车之后就开始编译了。（我i5-2450的处理器，-j8还行，不会卡爆～～）
-</span><span class='line'>
-</span><span class='line'>  应该是在加载文件，所以有点慢，请等待～～  之后CPU会满载进行编译～～
-</span><span class='line'>  只要不出现error ,不停止就没问题，直接编译完成就行了～～大概需要3分钟左右吧～～
-</span><span class='line'>  刚才看到的那些chinese一段是在执行汉化脚本的编译～～
-</span><span class='line'>
-</span><span class='line'> 10. 编译完了～～高通的一般能直接使用，mtk的需要另外处理（具体请自己搞吧～～）
-</span><span class='line'>  G6/recovery/root里面的文件就是编译生成的，mtk的经过重新打包就能用了。我不写了，上课去～～
-</span><span class='line'>  刷入之后有问题的，比如无法挂载分区，无法挂载U盘等等的，请检查分区表配置文件！
-</span><span class='line'>
-</span><span class='line'> 11. 为什么要自己编译呢？为了装逼信息么～～好吧，装逼信息在 recovery/Android.mk 里面～～
-</span><span class='line'>  可以自己修改，如果可以的话把我也加上呗～～（雨伞_先生）
-</span></code></pre></td></tr></table></div></figure>
-
-
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+<span class="line-number">29</span>
+<span class="line-number">30</span>
+<span class="line-number">31</span>
+<span class="line-number">32</span>
+<span class="line-number">33</span>
+<span class="line-number">34</span>
+<span class="line-number">35</span>
+<span class="line-number">36</span>
+<span class="line-number">37</span>
+<span class="line-number">38</span>
+<span class="line-number">39</span>
+<span class="line-number">40</span>
+<span class="line-number">41</span>
+<span class="line-number">42</span>
+<span class="line-number">43</span>
+<span class="line-number">44</span>
+<span class="line-number">45</span>
+<span class="line-number">46</span>
+<span class="line-number">47</span>
+<span class="line-number">48</span>
+<span class="line-number">49</span>
+<span class="line-number">50</span>
+<span class="line-number">51</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"> 1. 同步cm10.1的源码，具体操作请百度之～～
+</span><span class="line"> 2. 打开终端，到源码目录下：
+</span><span class="line">	<span class="nb">cd </span>Android/cm10.1                   //我的源码目录
+</span><span class="line"> 3. 如果不想使用cm10.1的英文源码，可以按如下操作获取我的recovery汉化源码：（如不需要，请直接下一步！）
+</span><span class="line">	rm -rf bootable/recovery         //删除原来的cm10.1的recovery源码
+</span><span class="line">	git clone git@github.com:APAR1992/CWM_Recovery_v6037_cn.git bootable/recovery      //获取我的recovery源码
+</span><span class="line">    我有源码，就不执行上面这句了，直接复制一下～～
+</span><span class="line"> 4. 获取你的机子的recovery.img（原厂的或者别人编译的也行），具体请自己搞定，线刷包里面有，没有的自己想办法提取，
+</span><span class="line">	这儿就不说了。为了方便，将名字改为你的机子的型号（eg：G6.img），然后将其放到主目录（~/G6.img）。
+</span><span class="line">	放到其它目录也行，按自己情况随便放吧。
+</span><span class="line"> 5. 在源码目录执行如下语句生成 otatools ，下一步会用到：
+</span><span class="line">	make otatools -j4 		//注意空格，后面的 -j4 可以视你的电脑配置而定，电脑配置不行就不加或者 -j2 ,
+</span><span class="line">	电脑配置好点呢就 -j8 或者 -j16 ，你可以试试，不过太大了电脑会卡死～～
+</span><span class="line">	执行这步可能需要比较长的时间，有可能在1小时左右，请耐心等待（已经编译过的，请直接下一步！）
+</span><span class="line">	otatools编译完成之后还需要把 out/host/linux-x86/bin 文件夹加入到环境变量中去，这个请百度一下吧，
+</span><span class="line">	ubuntu直接在主目录下终端执行 gedit .bashrc ,打开修改就行了，网上都有，按情况添加就行了，其他linux版本可能没有
+</span><span class="line">	~/.bashrc 文件，可以加到/etc/environment 里面，都是一样的效果
+</span><span class="line">	完了之后执行  <span class="nb">source</span> .bashrc <span class="o">(</span><span class="nb">source</span> /etc/environment<span class="o">)</span>  使修改生效，重启一下也是可以的～～百度都有，就不详细说了
+</span><span class="line">
+</span><span class="line">	我已经有了，所以这一步就不用执行了，跳过～～
+</span><span class="line">
+</span><span class="line"> 6. 执行如下语句生成你的机型device：
+</span><span class="line">	./build/tools/device/mkvendor.sh XiaoCai G6 ~/G6.img      //（cpio: 归档非正常终止 ）不用管，mtk的就这样，不影响编译。
+</span><span class="line">	请注意命令中的空格，不要打错！！！
+</span><span class="line">	生成device文件了～～～好像没什么可说的～～
+</span><span class="line">
+</span><span class="line"> 7. 修改你的机子的device，主要是改BoardConfig.mk ，因为只是编译recovery，所以稍微修改一下就可以了。
+</span><span class="line">	可以打开 recovery/README.md 查看需要额外添加的语句。加上我上面加的那两句就行了，其他可以不用管。
+</span><span class="line">	还有一个要改的就是分区表 recovery.fstab ，这个没法说清楚，请查看自己机子的分区对应修改！
+</span><span class="line">
+</span><span class="line">	可以看一下我给别的机子改的分区表，大概就那个样子，按照自己的机子分区改一下就行了～～
+</span><span class="line">
+</span><span class="line"> 8. 然后就可以编译了，为了方便，可以在你的机型目录下新建一个 vendorsetup.sh 。并且在里面写上你的机型。
+</span><span class="line">	打开你的机型文件夹，然后右键新建文档，改名 vendorsetup.sh ,打开修改，按情况在里面加上一句：
+</span><span class="line">	add_lunch_combo cm_G6-eng 。下一步在lunch的时候就会有你的机型了。
+</span><span class="line">
+</span><span class="line"> 9. 开始编译，执行如下命令：
+</span><span class="line">	. build/envsetup.sh（或者 <span class="nb">source </span>build/envsetup.sh）		//执行这句很重要！   一般还是执行source build/envsetup.sh 这句吧
+</span><span class="line">	lunch		// lunch，然后选择你的机型，输入序号即可
+</span><span class="line">	make recoveryimage -j4		//注意空格，回车之后就开始编译了。（我i5-2450的处理器，-j8还行，不会卡爆～～）
+</span><span class="line">
+</span><span class="line">	应该是在加载文件，所以有点慢，请等待～～  之后CPU会满载进行编译～～
+</span><span class="line">	只要不出现error ,不停止就没问题，直接编译完成就行了～～大概需要3分钟左右吧～～
+</span><span class="line">	刚才看到的那些chinese一段是在执行汉化脚本的编译～～
+</span><span class="line">
+</span><span class="line"> 10. 编译完了～～高通的一般能直接使用，mtk的需要另外处理（具体请自己搞吧～～）
+</span><span class="line">	G6/recovery/root里面的文件就是编译生成的，mtk的经过重新打包就能用了。我不写了，上课去～～
+</span><span class="line">	刷入之后有问题的，比如无法挂载分区，无法挂载U盘等等的，请检查分区表配置文件！
+</span><span class="line">
+</span><span class="line"> 11. 为什么要自己编译呢？为了装逼信息么～～好吧，装逼信息在 recovery/Android.mk 里面～～
+</span><span class="line">	可以自己修改，如果可以的话把我也加上呗～～（雨伞_先生）
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 <p>这两天看了下<code>Octopress</code>的文档，然后试了试插入视频，貌似效果还不错的样子，所以又转码插入一个视频：
-<video width='640' height='320' preload='none' controls poster='http://yusan.qiniudn.com/blog2014-05-24%2020:46:02%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png'><source src='http://yusan.qiniudn.com/blogrecovery.m4v' ></video></p>
+<video width="640" height="320" preload="none" controls="" poster="http://yusan.qiniudn.com/blog2014-05-24%2020:46:02%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png"><source src="http://yusan.qiniudn.com/blogrecovery.m4v" /></video></p>
 
 <p>文件都传到百度网盘了，包括源文件rmvb的也在（因为最近严打色情低俗内容，不知道为什么百度好像把<code>recovery</code>这个字眼加入到敏感词了，导致分享会失败，所以把文件都改了名～）</p>
 
-<blockquote><p>分享地址：<a href="http://pan.baidu.com/s/1bn1oZHd">点我打开</a></p>
+<blockquote>
+  <p>分享地址：<a href="http://pan.baidu.com/s/1bn1oZHd">点我打开</a></p>
+</blockquote>
 
-<p>百度云在线播放地址：<a href="http://pan.baidu.com/share/link?shareid=1387760483&amp;uk=3088635290&amp;fid=3552733136">点我播放</a></p></blockquote>
+<blockquote>
+  <p>百度云在线播放地址：<a href="http://pan.baidu.com/share/link?shareid=1387760483&amp;uk=3088635290&amp;fid=3552733136">点我播放</a></p>
+</blockquote>
 
-<h5>如果觉得在线播放不爽，就直接下载吧！avi格式的204M大小。</h5>
+<h5 id="avi204m">如果觉得在线播放不爽，就直接下载吧！avi格式的204M大小。</h5>
 
-<p class='info warning' data-title='最后:'>我只是简单地对编译的过程及一些需要修改的地方做了说明介绍，很多东西都是视情况而定的，需要自己慢慢理解！有问题请百度，百度不行请找谷歌，不要什么事情都问别人，大神也是从小白慢慢走过来的！我也不是大神！<span class="fluo">百度和谷歌上能找到大多数问题的解决方案，请一定学会使用！</span></p>
-
+<p class="info warning" data-title="最后:">我只是简单地对编译的过程及一些需要修改的地方做了说明介绍，很多东西都是视情况而定的，需要自己慢慢理解！有问题请百度，百度不行请找谷歌，不要什么事情都问别人，大神也是从小白慢慢走过来的！我也不是大神！<span class="fluo">百度和谷歌上能找到大多数问题的解决方案，请一定学会使用！</span></p>
 </div>
 
 
@@ -305,29 +337,8 @@
   
     <section>
 <h1>QR-Code<abbr title="The word 'QR Code' is a registered trademark of DENSO WAVE INCORPORATED. It applies only for the word 'QR Code', not for image.">&trade;</abbr></h1>
-<a href="http://YuSan.github.io/blog/2014/05/12/compile-recovery/"><img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=|0&chco=165B94&chl=http://YuSan.github.io/blog/2014/05/12/compile-recovery/" alt="post-qrcode"></a></section><section>
-  <h1>文章分类</h1>
-  <ul id="categories">
-    <li class='category'><a href='/blog/categories/baiduyun/'>BaiDuYun (1)</a></li>
-<li class='category'><a href='/blog/categories/bird-xl100/'>Bird_XL100 (3)</a></li>
-<li class='category'><a href='/blog/categories/galapad-s6/'>GALAPAD_S6 (10)</a></li>
-<li class='category'><a href='/blog/categories/keleui/'>KeLeUI (1)</a></li>
-<li class='category'><a href='/blog/categories/lewa-os5/'>LeWa-OS5 (7)</a></li>
-<li class='category'><a href='/blog/categories/linux/'>Linux (3)</a></li>
-<li class='category'><a href='/blog/categories/miui-v5/'>MIUI_V5 (1)</a></li>
-<li class='category'><a href='/blog/categories/markdown/'>Markdown (1)</a></li>
-<li class='category'><a href='/blog/categories/recovery/'>Recovery (4)</a></li>
-<li class='category'><a href='/blog/categories/rom/'>Rom (10)</a></li>
-<li class='category'><a href='/blog/categories/shell/'>Shell (1)</a></li>
-<li class='category'><a href='/blog/categories/skill/'>Skill (1)</a></li>
-<li class='category'><a href='/blog/categories/misc/'>misc (1)</a></li>
-<li class='category'><a href='/blog/categories/octopress/'>octopress (2)</a></li>
-<li class='category'><a href='/blog/categories/software/'>software (2)</a></li>
-
-  </ul>
-</section>
-<section id="titles">
-  <a href="http://YuSan.github.io" title="YuSan's Blog"><img id="logo" src="http://YuSan.github.io/images/" /></a>
+<a href="http://YuSan.github.io/blog/2014/05/12/compile-recovery/"><img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=|0&chco=165B94&chl=http://YuSan.github.io/blog/2014/05/12/compile-recovery/" alt="post-qrcode"></a></section><section id="titles">
+  <a href="http://YuSan.github.io" title="YuSan's Blog"><img id="logo" src="http://YuSan.github.io/images/yusan.png" /></a>
   <h1 id="site_title"><a href="http://YuSan.github.io" title="YuSan's Blog">YuSan's Blog</a></h1>
   <h3 id="site_subtitle">记录......</h3>
 </section>
