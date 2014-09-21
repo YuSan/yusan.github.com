@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Octopress | YuSan's Blog]]></title>
+  <title><![CDATA[Category: octopress | YuSan's Blog]]></title>
   <link href="http://YuSan.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://YuSan.github.io/"/>
-  <updated>2014-09-12T20:43:40+08:00</updated>
+  <updated>2014-09-21T21:51:50+08:00</updated>
   <id>http://YuSan.github.io/</id>
   <author>
     <name><![CDATA[雨伞先生]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Linux执行bundle Install出现的问题解决]]></title>
+    <title type="html"><![CDATA[Linux执行bundle install出现的问题解决]]></title>
     <link href="http://YuSan.github.io/blog/2014/05/27/bundle-install-problem/"/>
     <updated>2014-05-27T19:50:49+08:00</updated>
     <id>http://YuSan.github.io/blog/2014/05/27/bundle-install-problem</id>
