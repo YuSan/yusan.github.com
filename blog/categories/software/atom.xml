@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Software | YuSan's Blog]]></title>
+  <link href="http://YuSan.github.io/blog/categories/software/atom.xml" rel="self"/>
+  <link href="http://YuSan.github.io/"/>
+  <updated>2014-09-12T20:43:40+08:00</updated>
+  <id>http://YuSan.github.io/</id>
+  <author>
+    <name><![CDATA[雨伞先生]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Markdown Editor——haroopad]]></title>
+    <link href="http://YuSan.github.io/blog/2014/06/10/markdown-editor-haroopad/"/>
+    <updated>2014-06-10T12:15:54+08:00</updated>
+    <id>http://YuSan.github.io/blog/2014/06/10/markdown-editor-haroopad</id>
+    <content type="html"><![CDATA[<h4><a href="http://pad.haroopress.com/user.html">Haroopad</a>是一款跨平台的markdown编辑器，使用Chromium作为UI，支持Windows、Mac OS X和Linux。主题样式丰富，语法标亮支持54种编程语言。<img class="<a" src="href="http://pad.haroopress.com/assets/images/intro/1.png">http://pad.haroopress.com/assets/images/intro/1.png</a>"></h4>
+
+<!--more-->
+
+
+<h4>为什么是它呢？因为它支持Linux系统，Markdown编辑器有很多，有很多好用的在线编辑器，但是在网络支持不好的时候，有一款顺手的软件是极好的！支持Linux系统的软件貌似就三个。<a href="http://pad.haroopress.com/user.html">Haroopad</a>是其中功能比较全面的一款！软件是个韩国人开发的，对中文的支持很好，所以就是它了！</h4>
+
+<h4>以前就找到了这个软件，可能是因为GFW的原因，软件主页提供的下载无法打开，貌似软件是在Dropbox的，费了好大劲下载下来，安装的时候现实的是依赖包已满足，但是安装完成之后却打不开，刚开始太笨了，以为是我的linux版本不对呢，然后就卸载了，最近又把它找出来，想再安装一次试试，装完了依然打不开！</h4>
+
+<h4>突然想起来可以在终端敲命令试试看能不能启动，或者看看有什么错误信息，果然在终端输入<code>haroopad</code>之后，显示一个动态库<code>libudev.so.0</code>找不到：</h4>
+
+<p><img class="<a" src="href="http://yusan.qiniudn.com/2014-06-10%2010:50:05%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png">http://yusan.qiniudn.com/2014-06-10%2010:50:05%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png</a>"></p>
+
+<h4>然后百度了一下，找到有类似的情况，看了看，原来很简单的!</h4>
+
+<h4>在终端输入<code>locate udev.so</code>看看这个库文件到底有木有呢？</h4>
+
+<p><img class="<a" src="href="http://yusan.qiniudn.com/2014-06-10%2010:52:17%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png">http://yusan.qiniudn.com/2014-06-10%2010:52:17%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png</a>"></p>
+
+<h4>发现系统里面的文件名跟<code>haroopad</code>要加载的库文件名称不同，创建一个新的软链接到这个库即可！在终端输入下面的命令，输入密码执行完成：</h4>
+
+<pre><code>sudo ln -s /lib/x86_64-linux-gnu/libudev.so.1 /lib/x86_64-linux-gnu/libudev.so.0
+</code></pre>
+
+<p>然后再输入<code>haroopad</code>，成功地打开了！
+<img class="<a" src="href="http://yusan.qiniudn.com/2014-06-10%2010:54:39%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png">http://yusan.qiniudn.com/2014-06-10%2010:54:39%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png</a>"></p>
+
+<h4>之后从软件列表打开软件也可以了，完成！</h4>
+
+<p><img class="<a" src="href="http://yusan.qiniudn.com/2014-06-10%2013:11:17%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png">http://yusan.qiniudn.com/2014-06-10%2013:11:17%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png</a>"></p>
+
+<h4><span class="fluo">软件下载<a href="http://pan.baidu.com/s/1jGMbj1s">64位的</a> </span></h4>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Linux下sublime_text的安装与使用]]></title>
+    <link href="http://YuSan.github.io/blog/2014/05/24/sublime-text/"/>
+    <updated>2014-05-24T18:31:35+08:00</updated>
+    <id>http://YuSan.github.io/blog/2014/05/24/sublime-text</id>
+    <content type="html"><![CDATA[<p><img class="left <a" src="href="http://yusan.qiniudn.com/blog2014-05-24%2020:18:38%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png">http://yusan.qiniudn.com/blog2014-05-24%2020:18:38%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png</a>" width="270" height="260" title="&lsquo;sublime_text 3059&rsquo;" ></p>
+
+<h4><code>Sublime_text</code>，一个跨平台的代码编辑器。刚买电脑的时候在网上看到然后安装过，因为功能强大，作为小白的我看了看然后就卸载了，因为我不会用！那时候是在<code>Windows</code>下，我还有别的编辑器可以用，比如Notepad++，还有Emediter等软件都是不错的。</h4>
+
+<!--more-->
+
+
+<h4>后来因为想学点安卓的东西，所以装了linux，一直小白的我不会用vim和Emacs，就用系统自带的<code>gedit</code>，觉得还是很好的，因为很多代码都支持高亮的。</h4>
+
+<h4>再后来想看 <strong>smali</strong> 文件,所以想找个好用的编辑器来高亮显示代码，所以找啊找，最后又找到了<code>Sublime_Text</code>，因为它支持插件，可以安装插件来支持 <strong>smali</strong> 代码高亮显示.</h4>
+
+<p><img class="<a" src="href="http://yusan.qiniudn.com/blog2014-05-24%2020:37:49%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png">http://yusan.qiniudn.com/blog2014-05-24%2020:37:49%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png</a>" title="&lsquo;smali代码高亮显示&rsquo;" ></p>
+
+<h2>软件安装：</h2>
+
+<h4>Sublime_text的下载和安装挺简单的，直接到<a href="http://www.sublimetext.com/">Sublime Text官网</a>选择下载即可！或者直接下载<span class="fluo">Sublime_Text 3(Build 3059)</span>:<a href="http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3059_i386.deb">32bit</a>|<a href="http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3059_amd64.deb">64bit</a>。然后在终端执行下面的命令安装即可！</h4>
+
+<pre><code>sudo dpkg -i *.deb
+</code></pre>
+
+<h2>软件破解：</h2>
+
+<h4>因为软件是收费的（可以无限期试用），所以又找了一下破解，在<a href="http://bbs.pediy.com/showthread.php?t=182774">看雪论坛</a>上有破解的帖子，下载破解文件(<a href="http://yun.baidu.com/share/link?shareid=3756674317&amp;uk=2986591212">32bit</a>|<a href="http://yun.baidu.com/share/link?shareid=3762073257&amp;uk=2986591212">64bit</a>)更面并替换原来安装的文件即可破解！安装文件路径在 <strong>/opt/sublime_text/</strong> 下。</h4>
+
+<h2>解决中文输入：</h2>
+
+<h4>然后还有一个很头疼的问题就是在Sublime_text里面无法输入中文，为了解决这个问题，找了好久，最后成功了：下载此<a href="http://yusan.qiniudn.com/Sublime_Text_imfix.tar">文件</a>,解压文件到任意路径，并复制库文件到安装路径<code>/opt/sublime_text/</code>下，然后将Desktop文件复制到<code>/usr/share/applications/</code>替换里面的文件</h4>
+
+<pre><code>sudo cp libsublime-imfix.so /opt/sublime_text/.
+sudo cp sublime_text.desktop  /usr/share/applications/.
+</code></pre>
+
+<p><img class="<a" src="href="http://yusan.qiniudn.com/blog2014-05-24%2022:22:38%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png">http://yusan.qiniudn.com/blog2014-05-24%2022:22:38%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png</a>" title="&lsquo;输入中文&rsquo;" ></p>
+
+<p><p class='info warning' data-title='提示:'>如果按照上述步骤做完了还是不能在<code>Sublime</code>输入中文，试试安装<code>gtk+-2.0</code></p></p>
+
+<pre><code>sudo apt-get install gtk+-2.0
+</code></pre>
+
+<p><img class="<a" src="href="http://yusan.qiniudn.com/2014-05-27%2022:20:56%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png">http://yusan.qiniudn.com/2014-05-27%2022:20:56%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png</a>" title="&lsquo;安装gtk+-2.0&rsquo;" ></p>
+
+<h2>在终端打开：</h2>
+
+<h4>解决了中文输入的问题之后，就可以正常使用了。但是怎么让sublime_text在终端可以执行命令打开呢？又百度了一下：在 <strong>/usr/bin/</strong> 下建立它的链接即可，在终端执行下面的命令即可：</h4>
+
+<pre><code>sudo ln -s /opt/sublime_text/sublime_text /usr/bin/sublime
+</code></pre>
+
+<h4>这样就可以直接在终端输入<code>sublime</code>命令打开Sublime_Text编辑器了！</h4>
+]]></content>
+  </entry>
+  
+</feed>
