@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Linux Shell 用法和技巧 - YuSan's Blog</title>
+  <title>在linux下安装多个jdk版本 - YuSan's Blog</title>
   <meta name="author" content="雨伞先生">
 
   
-  <meta name="description" content="在码农网看到的，学习一下，顺便留个备份～～ 检查远程端口是否对bash开放： echo >/dev/tcp/8.8.8.8/53 &amp;&amp; echo &ldquo;open&rdquo; 让进程转入后台： Ctrl + z 将进程转到前台： fg 产生随机的十六进制数，其中n是字符数 &hellip;">
+  <meta name="description" content="在4.4（Kitkat）之前一直用的SunJDK1.6版本来编译，到4.4的时候开始用SunJDK1.7版本编译，从Android L开始到现在的5.0谷歌开始使用OpenJDK来编译。
+所以在一台电脑上要进行源码编译需要安装多个版本的JDK。 我现在用的系统是LinuxMint17， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://YuSan.github.io/blog/2013/12/02/linux-shell-use-and-skill/">
+  <link rel="canonical" href="http://YuSan.github.io/blog/2014/11/21/zai-linuxxia-an-zhuang-duo-ge-jdkban-ben/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
    <link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -115,7 +116,7 @@
   
   <header>
     
-      <h1 class="entry-title">Linux Shell 用法和技巧</h1>
+      <h1 class="entry-title">在linux下安装多个jdk版本</h1>
     
     
       <p class="meta">
@@ -131,7 +132,7 @@
   
 
 
-<time datetime="2013-12-02T22:35:00+08:00" pubdate data-updated="true">Dec 2<span>nd</span>, 2013</time>
+<time datetime="2014-11-21T19:41:43+08:00" pubdate data-updated="true">Nov 21<span>st</span>, 2014</time>
         
         
          | <a href="#comments">Comments</a>
@@ -141,314 +142,165 @@
   </header>
 
 
-<div class="entry-content"><hr />
-
-<h2>在码农网看到的，学习一下，顺便留个备份～～</h2>
+<div class="entry-content"><p>在4.4（Kitkat）之前一直用的SunJDK1.6版本来编译，到4.4的时候开始用SunJDK1.7版本编译，从Android L开始到现在的5.0谷歌开始使用OpenJDK来编译。
+所以在一台电脑上要进行源码编译需要安装多个版本的JDK。</p>
 
 <!--more-->
 
 
-<h4>检查远程端口是否对bash开放：</h4>
+<p>我现在用的系统是LinuxMint17，基于UBUNTU 14.04。</p>
 
-<blockquote><p>echo >/dev/tcp/8.8.8.8/53 &amp;&amp; echo &ldquo;open&rdquo;</p></blockquote>
+<p>现在需要用到如上几个版本的JDK，所以都进行了安装，在需要的时候进行切换即可。</p>
 
-<h4>让进程转入后台：</h4>
+<h3>1.SunJDK1.6</h3>
 
-<blockquote><p>Ctrl + z</p></blockquote>
+<p>可以在此下载<a href="http://pan.baidu.com/s/1dDcliPN">jdk-6u43-linux-x64.bin</a>,安装方法可看这个<a href="http://hi.baidu.com/apar1992/item/d3c31afeb3ae9d12c7dc4563">ubuntu配置 Java SE 1.6</a></p>
 
-<h4>将进程转到前台：</h4>
+<h3>2.SunJDK1.7</h3>
 
-<blockquote><p>fg</p></blockquote>
+<p>可以到SunJDK官网下载<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">JDK7</a>,下载之后执行如下命令解压：</p>
 
-<h4>产生随机的十六进制数，其中n是字符数：</h4>
-
-<blockquote><p>openssl rand -hex n</p></blockquote>
-
-<h4>在当前shell里执行一个文件里的命令：</h4>
-
-<blockquote><p>source /home/user/file.name</p></blockquote>
-
-<h4>截取前5个字符：</h4>
-
-<blockquote><p>${variable:0:5}</p></blockquote>
-
-<h4>SSH debug 模式:</h4>
-
-<blockquote><p>ssh -vvv user@ip_address</p></blockquote>
-
-<h4>SSH with pem key:</h4>
-
-<blockquote><p>ssh user@ip_address -i key.pem</p></blockquote>
-
-<h4>用wget抓取完整的网站目录结构，存放到本地目录中：</h4>
-
-<blockquote><p>wget -r &mdash;no-parent &mdash;reject &ldquo;index.html*&rdquo; <a href="http://hostname/">http://hostname/</a> -P /home/user/dirs</p></blockquote>
-
-<h4>一次创建多个目录：</h4>
-
-<blockquote><p>mkdir -p /home/user/{test,test1,test2}</p></blockquote>
-
-<h4>列出包括子进程的进程树：</h4>
-
-<blockquote><p>ps axwef</p></blockquote>
-
-<h4>创建 war 文件:</h4>
-
-<blockquote><p>jar -cvf name.war file</p></blockquote>
-
-<h4>测试硬盘写入速度：</h4>
-
-<blockquote><p>dd if=/dev/zero of=/tmp/output.img bs=8k count=256k; rm -rf /tmp/output.img</p></blockquote>
-
-<h4>测试硬盘读取速度：</h4>
-
-<blockquote><p>hdparm -Tt /dev/sda</p></blockquote>
-
-<h4>获取文本的md5 hash：</h4>
-
-<blockquote><p>echo -n &ldquo;text&rdquo; | md5sum</p></blockquote>
-
-<h4>检查xml格式：</h4>
-
-<blockquote><p>xmllint &mdash;noout file.xml</p></blockquote>
-
-<h4>将tar.gz提取到新目录里：</h4>
-
-<blockquote><p>tar zxvf package.tar.gz -C new_dir</p></blockquote>
-
-<h4>使用curl获取HTTP头信息：</h4>
-
-<blockquote><p>curl -I <a href="http://www.example.com">http://www.example.com</a></p></blockquote>
-
-<h4>修改文件或目录的时间戳(YYMMDDhhmm):</h4>
-
-<blockquote><p>touch -t 0712250000 file</p></blockquote>
-
-<h4>用wget命令执行ftp下载：</h4>
-
-<blockquote><p>wget -m <a href="ftp://username:password@hostname">ftp://username:password@hostname</a></p></blockquote>
-
-<h4>生成随机密码(例子里是16个字符长):</h4>
-
-<blockquote><p>LANG=c &lt; /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-16};echo;</p></blockquote>
-
-<h4>快速备份一个文件：</h4>
-
-<blockquote><p>cp some_file_name{,.bkp}</p></blockquote>
-
-<h4>访问Windows共享目录：</h4>
-
-<blockquote><p>smbclient -U &ldquo;DOMAIN\user&rdquo; //dc.domain.com/share/test/dir</p></blockquote>
-
-<h4>执行历史记录里的命令(这里是第100行):</h4>
-
-<blockquote><p>!100</p></blockquote>
-
-<h4>解压:</h4>
-
-<blockquote><p>unzip package_name.zip -d dir_name</p></blockquote>
-
-<h4>输入多行文字(CTRL + d 退出):</h4>
-
-<blockquote><p>cat > test.txt</p></blockquote>
-
-<h4>创建空文件或清空一个现有文件：</h4>
-
-<blockquote><p>test.txt</p></blockquote>
-
-<h4>与Ubuntu NTP server同步时间：</h4>
-
-<blockquote><p>ntpdate ntp.ubuntu.com</p></blockquote>
-
-<h4>用netstat显示所有tcp4监听端口：</h4>
-
-<blockquote><p>netstat -lnt4 | awk &lsquo;{print $4}&rsquo; | cut -f2 -d: | grep -o &lsquo;[0-9]*&rsquo;</p></blockquote>
-
-<h4>qcow2镜像文件转换：</h4>
-
-<blockquote><p>qemu-img convert -f qcow2 -O raw precise-server-cloudimg-amd64-disk1.img        \precise-server-cloudimg-amd64-disk1.raw</p></blockquote>
-
-<h4>重复运行文件，显示其输出（缺省是2秒一次）：</h4>
-
-<blockquote><p>watch ps -ef</p></blockquote>
-
-<h4>所有用户列表：</h4>
-
-<blockquote><p>getent passwd</p></blockquote>
-
-<h4>Mount root in read/write mode:</h4>
-
-<blockquote><p>mount -o remount,rw /</p></blockquote>
-
-<h4>挂载一个目录（这是不能使用链接的情况）:</h4>
-
-<blockquote><p>mount &mdash;bind /source /destination</p></blockquote>
-
-<h4>动态更新DNS server:</h4>
-
-<blockquote><p>nsupdate &lt; &lt;EOF
-update add $HOST 86400 A $IP
-send
-EOF</p></blockquote>
-
-<h4>递归grep所有目录：</h4>
-
-<blockquote><p>grep -r &ldquo;some_text&rdquo; /path/to/dir</p></blockquote>
-
-<h4>列出前10个最大的文件：</h4>
-
-<blockquote><p>lsof / | awk &lsquo;{ if($7 > 1048576) print $7/1048576 &ldquo;MB &rdquo;$9 }&rsquo; | sort -n -u | tail</p></blockquote>
-
-<h4>显示剩余内存(MB):</h4>
-
-<blockquote><p>free -m | grep cache | awk &lsquo;/[0-9]/{ print $4&#8221; MB&#8221; }&rsquo;</p></blockquote>
-
-<h4>打开Vim并跳到文件末：</h4>
-
-<blockquote><p>vim + some_file_name</p></blockquote>
-
-<h4>Git 克隆指定分支(master):</h4>
-
-<blockquote><p>git clone git@github.com:name/app.git -b master</p></blockquote>
-
-<h4>Git 切换到其它分支(develop):</h4>
-
-<blockquote><p>git checkout develop</p></blockquote>
-
-<h5>Git 删除分支(myfeature):</h5>
-
-<blockquote><p>git branch -d myfeature</p></blockquote>
-
-<h4>Git 删除远程分支</h4>
-
-<blockquote><p>git push origin :branchName</p></blockquote>
-
-<h4>Git 将新分支推送到远程服务器：</h4>
-
-<blockquote><p>git push -u origin mynewfeature</p></blockquote>
-
-<h4>打印历史记录中最后一次cat命令：</h4>
-
-<blockquote><p>!cat:p</p></blockquote>
-
-<h4>运行历史记录里最后一次cat命令：</h4>
-
-<blockquote><p>!cat</p></blockquote>
-
-<h4>找出/home/user下所有空子目录:</h4>
-
-<blockquote><p>find /home/user -maxdepth 1 -type d -empty</p></blockquote>
-
-<h4>获取test.txt文件中第50-60行内容：</h4>
-
-<blockquote><p>&lt; test.txt sed -n &lsquo;50,60p&rsquo;</p></blockquote>
-
-<h4>运行最后一个命令(如果最后一个命令是mkdir /root/test, 下面将会运行: sudo mkdir /root/test)：</h4>
-
-<blockquote><p>sudo !!</p></blockquote>
-
-<h4>创建临时RAM文件系统 – ramdisk (先创建/tmpram目录):</h4>
-
-<blockquote><p>mount -t tmpfs tmpfs /tmpram -o size=512m</p></blockquote>
-
-<h4>Grep whole words:</h4>
-
-<blockquote><p>grep -w &ldquo;name&rdquo; test.txt</p></blockquote>
-
-<h4>在需要提升权限的情况下往一个文件里追加文本：</h4>
-
-<blockquote><p>echo &ldquo;some text&rdquo; | sudo tee -a /path/file</p></blockquote>
-
-<h4>列出所有kill signal参数:</h4>
-
-<blockquote><p>kill -l</p></blockquote>
-
-<h4>在bash历史记录里禁止记录最后一次会话：</h4>
-
-<blockquote><p>kill -9 $$</p></blockquote>
-
-<h4>扫描网络寻找开放的端口：</h4>
-
-<blockquote><p>nmap -p 8081 172.20.0.0/16</p></blockquote>
-
-<h4>设置git email:</h4>
-
-<blockquote><p>git config &mdash;global user.email &ldquo;<a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#58;&#x6d;&#101;&#64;&#101;&#x78;&#x61;&#x6d;&#112;&#108;&#101;&#46;&#99;&#111;&#x6d;">&#109;&#101;&#64;&#101;&#120;&#97;&#x6d;&#x70;&#108;&#x65;&#46;&#x63;&#111;&#109;</a>&rdquo;</p></blockquote>
-
-<h4>To sync with master if you have unpublished commits:</h4>
-
-<blockquote><p>git pull &mdash;rebase origin master</p></blockquote>
-
-<h4>将所有文件名中含有”txt”的文件移入/home/user目录:</h4>
-
-<blockquote><p>find -iname &ldquo;<em>txt</em>&rdquo; -exec mv -v {} /home/user \;</p></blockquote>
-
-<h4>将文件按行并列显示：</h4>
-
-<blockquote><p>paste test.txt test1.txt</p></blockquote>
-
-<h4>shell里的进度条:></h4>
-
-<blockquote><p>pv data.log</p></blockquote>
-
-<h4>使用netcat将数据发送到Graphite server:</h4>
-
-<blockquote><p>echo &ldquo;hosts.sampleHost 10 <code>date +%s</code>&rdquo; | nc 192.168.200.2 3000</p></blockquote>
-
-<h4>将tabs转换成空格：</h4>
-
-<blockquote><p>expand test.txt > test1.txt</p></blockquote>
-
-<h4>Skip bash history:</h4>
-
-<blockquote><p>&lt; space >cmd</p></blockquote>
-
-<h4>去之前的工作目录：</h4>
-
-<blockquote><p>cd &ndash;</p></blockquote>
-
-<h4>拆分大体积的tar.gz文件(每个100MB)，然后合并回去：</h4>
-
-<blockquote><p>split –b 100m /path/to/large/archive /path/to/output/files
-cat files* > archive</p></blockquote>
-
-<h4>使用curl获取HTTP status code:</h4>
-
-<blockquote><p>curl -sL -w &ldquo;%{http_code}\n&rdquo; www.example.com -o /dev/null</p></blockquote>
-
-<h4>设置root密码，强化MySQL安全安装:</h4>
-
-<blockquote><p>/usr/bin/mysql_secure_installation</p></blockquote>
-
-<h4>当Ctrl + c不好使时:</h4>
-
-<blockquote><p>Ctrl + \</p></blockquote>
-
-<h4>获取文件owner:</h4>
-
-<blockquote><p>stat -c %U file.txt</p></blockquote>
-
-<h4>block设备列表：</h4>
-
-<blockquote><p>lsblk -f</p></blockquote>
-
-<h4>找出文件名结尾有空格的文件：</h4>
-
-<blockquote><p>find . -type f -exec egrep -l &ldquo; +$&rdquo; {} \;</p></blockquote>
-
-<h4>找出文件名有tab缩进符的文件</h4>
-
-<blockquote><p>find . -type f -exec egrep -l $&lsquo;\t&rsquo; {} \;</p></blockquote>
-
-<h4>用”=”打印出横线:</h4>
-
-<blockquote><p>printf &lsquo;%100s\n&rsquo; | tr &lsquo; &rsquo; =</p></blockquote>
-
-<hr />
-
-<h5>文章转自：<a href="http://www.codeceo.com/linux-shell.html">码农网</a></h5>
-
-<h5>[英文原文：<a href="http://www.techbar.me/linux-shell-tips/">Linux shell tips and tricks</a> ]   译文来自：aqee.net</h5>
+<pre><code>tar -zvfx jdk-7u72-linux-x64.tar.gz
+sudo mv -rf jdk1.7.0_72/ /opt/jdk1.7.0_72
+</code></pre>
+
+<h3>3.OpenJDK7</h3>
+
+<p>可以直接在终端执行如下命令安装</p>
+
+<pre><code>sudo apt-get install openjdk-7-jdk
+</code></pre>
+
+<p>安装完以上三个jdk版本之后，重启一下电脑，然后进行下面的操作：</p>
+
+<h4>1).先检查java安装情况</h4>
+
+<pre><code>sudo update-alternatives --display java
+sudo update-alternatives --display javac
+</code></pre>
+
+<p>显示结果如下（下面是我已经配置好的）</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>apar@G470 ~ <span class="nv">$ </span>sudo update-alternatives --display java
+</span><span class='line'>java - 手动模式
+</span><span class='line'>链接目前指向 /opt/jdk1.7.0_72/bin/java
+</span><span class='line'>/opt/jdk1.6.0_43/bin/java - 优先级 300
+</span><span class='line'>/opt/jdk1.7.0_72/bin/java - 优先级 400
+</span><span class='line'>/usr/lib/jvm/java-7-openjdk-amd64/bin/java - 优先级 500
+</span><span class='line'>目前“最佳”的版本为 /usr/lib/jvm/java-7-openjdk-amd64/bin/java。
+</span><span class='line'>apar@G470 ~ <span class="nv">$ </span>sudo update-alternatives --display javac
+</span><span class='line'>javac - 手动模式
+</span><span class='line'>链接目前指向 /opt/jdk1.7.0_72/bin/javac
+</span><span class='line'>/opt/jdk1.6.0_43/bin/javac - 优先级 300
+</span><span class='line'>/opt/jdk1.7.0_72/bin/javac - 优先级 400
+</span><span class='line'>/usr/lib/jvm/java-7-openjdk-amd64/bin/javac - 优先级 500
+</span><span class='line'>目前“最佳”的版本为 /usr/lib/jvm/java-7-openjdk-amd64/bin/javac。
+</span><span class='line'>apar@G470 ~ <span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>2).删除符号链接</h4>
+
+<p>执行类似如下命令删除已经存在的符号链接</p>
+
+<pre><code>sudo update-alternatives --remove java /opt/jdk1.6.0_43/bin/java
+sudo update-alternatives --remove javac /opt/jdk1.6.0_43/bin/javac
+</code></pre>
+
+<p>确认这些符号链接(symlinks)是否都删除了</p>
+
+<pre><code>java -version
+javac -version
+</code></pre>
+
+<h4>3).重新配置java链接</h4>
+
+<p>执行类似如下命令</p>
+
+<pre><code>sudo update-alternatives --install /usr/bin/java java /opt/jdk1.6.0_43/bin/java 300
+sudo update-alternatives --install /usr/bin/java java /opt/jdk1.7.0_72/bin/java 400
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-7-openjdk-amd64/bin/java 500
+
+sudo update-alternatives --install /usr/bin/javac javac /opt/jdk1.6.0_43/bin/javac 300
+sudo update-alternatives --install /usr/bin/javac javac /opt/jdk1.7.0_72/bin/javac 400
+sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/java-7-openjdk-amd64/bin/javac 500
+</code></pre>
+
+<h4>4).在需要的时候进行手动切换即可</h4>
+
+<pre><code>sudo update-alternatives --config java
+sudo update-alternatives --config javac
+</code></pre>
+
+<p>显示结果如下:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>apar@G470 ~ <span class="nv">$ </span>sudo update-alternatives --config java
+</span><span class='line'><span class="o">[</span>sudo<span class="o">]</span> password <span class="k">for </span>apar:
+</span><span class='line'>有 3 个候选项可用于替换 java <span class="o">(</span>提供 /usr/bin/java<span class="o">)</span>。
+</span><span class='line'>
+</span><span class='line'>  选择       路径                                      优先级  状态
+</span><span class='line'>------------------------------------------------------------
+</span><span class='line'>  0            /usr/lib/jvm/java-7-openjdk-amd64/bin/java   500       自动模式
+</span><span class='line'>  1            /opt/jdk1.6.0_43/bin/java                    300       手动模式
+</span><span class='line'>* 2            /opt/jdk1.7.0_72/bin/java                    400       手动模式
+</span><span class='line'>  3            /usr/lib/jvm/java-7-openjdk-amd64/bin/java   500       手动模式
+</span><span class='line'>
+</span><span class='line'>要维持当前值<span class="o">[</span>*<span class="o">]</span>请按回车键，或者键入选择的编号：
+</span><span class='line'>
+</span><span class='line'>apar@G470 ~ <span class="nv">$ </span>sudo update-alternatives --config javac
+</span><span class='line'>有 3 个候选项可用于替换 javac <span class="o">(</span>提供 /usr/bin/javac<span class="o">)</span>。
+</span><span class='line'>
+</span><span class='line'>  选择       路径                                       优先级  状态
+</span><span class='line'>------------------------------------------------------------
+</span><span class='line'>  0            /usr/lib/jvm/java-7-openjdk-amd64/bin/javac   500       自动模式
+</span><span class='line'>  1            /opt/jdk1.6.0_43/bin/javac                    300       手动模式
+</span><span class='line'>* 2            /opt/jdk1.7.0_72/bin/javac                    400       手动模式
+</span><span class='line'>  3            /usr/lib/jvm/java-7-openjdk-amd64/bin/javac   500       手动模式
+</span><span class='line'>
+</span><span class='line'>要维持当前值<span class="o">[</span>*<span class="o">]</span>请按回车键，或者键入选择的编号：
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>在需要的时候根据显示的结果进行选择切换即可，注意java跟javac要对应的切换！</p>
 </div>
 
 
@@ -471,12 +323,12 @@ cat files* > archive</p></blockquote>
   
 
 
-<time datetime="2013-12-02T22:35:00+08:00" pubdate data-updated="true">Dec 2<span>nd</span>, 2013</time>
+<time datetime="2014-11-21T19:41:43+08:00" pubdate data-updated="true">Nov 21<span>st</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/linux/'>Linux</a>, <a class='category' href='/blog/categories/shell/'>Shell</a>
+    <a class='category' href='/blog/categories/linux/'>Linux</a>, <a class='category' href='/blog/categories/software/'>software</a>
   
 </span>
 
@@ -515,10 +367,8 @@ var jiathis_config = {data_track_clickback:'true'};
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/11/24/first-blog/" title="Previous Post: First blog" style="padding-top: 12px">&laquo; First blog</a>
+        <a class="basic-alignment left" href="/blog/2014/06/10/markdown-editor-haroopad/" title="Previous Post: Markdown Editor——haroopad" style="padding-top: 12px">&laquo; Markdown Editor——haroopad</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/12/10/zai-duo-tai-ji-zi-shang-xie-octopressbo-ke/" title="Next Post: 在多台机子上写octopress博客" style="padding-top: 12px">在多台机子上写octopress博客 &raquo;</a>
       
     </p>
   </footer>
@@ -550,7 +400,7 @@ var duoshuoQuery = {short_name:"apar"};
   
     <section>
 <h1>QR-Code<abbr title="The word 'QR Code' is a registered trademark of DENSO WAVE INCORPORATED. It applies only for the word 'QR Code', not for image.">&trade;</abbr></h1>
-<a href="http://YuSan.github.io/blog/2013/12/02/linux-shell-use-and-skill/"><img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=|0&chco=165B94&chl=http://YuSan.github.io/blog/2013/12/02/linux-shell-use-and-skill/" alt="post-qrcode"></a></section><section id="titles">
+<a href="http://YuSan.github.io/blog/2014/11/21/zai-linuxxia-an-zhuang-duo-ge-jdkban-ben/"><img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chld=|0&chco=165B94&chl=http://YuSan.github.io/blog/2014/11/21/zai-linuxxia-an-zhuang-duo-ge-jdkban-ben/" alt="post-qrcode"></a></section><section id="titles">
   <a href="http://YuSan.github.io" title="YuSan's Blog"><img id="logo" src="http://YuSan.github.io/images/yusan.png" /></a>
   <h1 id="site_title"><a href="http://YuSan.github.io" title="YuSan's Blog">YuSan's Blog</a></h1>
   <h3 id="site_subtitle">记录......</h3>

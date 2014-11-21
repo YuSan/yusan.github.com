@@ -4,7 +4,7 @@
   <title><![CDATA[Category: software | YuSan's Blog]]></title>
   <link href="http://YuSan.github.io/blog/categories/software/atom.xml" rel="self"/>
   <link href="http://YuSan.github.io/"/>
-  <updated>2014-10-26T19:30:20+08:00</updated>
+  <updated>2014-11-21T21:23:40+08:00</updated>
   <id>http://YuSan.github.io/</id>
   <author>
     <name><![CDATA[雨伞先生]]></name>
@@ -12,6 +12,132 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[在linux下安装多个jdk版本]]></title>
+    <link href="http://YuSan.github.io/blog/2014/11/21/zai-linuxxia-an-zhuang-duo-ge-jdkban-ben/"/>
+    <updated>2014-11-21T19:41:43+08:00</updated>
+    <id>http://YuSan.github.io/blog/2014/11/21/zai-linuxxia-an-zhuang-duo-ge-jdkban-ben</id>
+    <content type="html"><![CDATA[<p>在4.4（Kitkat）之前一直用的SunJDK1.6版本来编译，到4.4的时候开始用SunJDK1.7版本编译，从Android L开始到现在的5.0谷歌开始使用OpenJDK来编译。
+所以在一台电脑上要进行源码编译需要安装多个版本的JDK。</p>
+
+<!--more-->
+
+
+<p>我现在用的系统是LinuxMint17，基于UBUNTU 14.04。</p>
+
+<p>现在需要用到如上几个版本的JDK，所以都进行了安装，在需要的时候进行切换即可。</p>
+
+<h3>1.SunJDK1.6</h3>
+
+<p>可以在此下载<a href="http://pan.baidu.com/s/1dDcliPN">jdk-6u43-linux-x64.bin</a>,安装方法可看这个<a href="http://hi.baidu.com/apar1992/item/d3c31afeb3ae9d12c7dc4563">ubuntu配置 Java SE 1.6</a></p>
+
+<h3>2.SunJDK1.7</h3>
+
+<p>可以到SunJDK官网下载<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">JDK7</a>,下载之后执行如下命令解压：</p>
+
+<pre><code>tar -zvfx jdk-7u72-linux-x64.tar.gz
+sudo mv -rf jdk1.7.0_72/ /opt/jdk1.7.0_72
+</code></pre>
+
+<h3>3.OpenJDK7</h3>
+
+<p>可以直接在终端执行如下命令安装</p>
+
+<pre><code>sudo apt-get install openjdk-7-jdk
+</code></pre>
+
+<p>安装完以上三个jdk版本之后，重启一下电脑，然后进行下面的操作：</p>
+
+<h4>1).先检查java安装情况</h4>
+
+<pre><code>sudo update-alternatives --display java
+sudo update-alternatives --display javac
+</code></pre>
+
+<p>显示结果如下（下面是我已经配置好的）
+<code>bash
+apar@G470 ~ $ sudo update-alternatives --display java
+java - 手动模式
+链接目前指向 /opt/jdk1.7.0_72/bin/java
+/opt/jdk1.6.0_43/bin/java - 优先级 300
+/opt/jdk1.7.0_72/bin/java - 优先级 400
+/usr/lib/jvm/java-7-openjdk-amd64/bin/java - 优先级 500
+目前“最佳”的版本为 /usr/lib/jvm/java-7-openjdk-amd64/bin/java。
+apar@G470 ~ $ sudo update-alternatives --display javac
+javac - 手动模式
+链接目前指向 /opt/jdk1.7.0_72/bin/javac
+/opt/jdk1.6.0_43/bin/javac - 优先级 300
+/opt/jdk1.7.0_72/bin/javac - 优先级 400
+/usr/lib/jvm/java-7-openjdk-amd64/bin/javac - 优先级 500
+目前“最佳”的版本为 /usr/lib/jvm/java-7-openjdk-amd64/bin/javac。
+apar@G470 ~ $
+</code></p>
+
+<h4>2).删除符号链接</h4>
+
+<p>执行类似如下命令删除已经存在的符号链接</p>
+
+<pre><code>sudo update-alternatives --remove java /opt/jdk1.6.0_43/bin/java
+sudo update-alternatives --remove javac /opt/jdk1.6.0_43/bin/javac
+</code></pre>
+
+<p>确认这些符号链接(symlinks)是否都删除了</p>
+
+<pre><code>java -version
+javac -version
+</code></pre>
+
+<h4>3).重新配置java链接</h4>
+
+<p>执行类似如下命令</p>
+
+<pre><code>sudo update-alternatives --install /usr/bin/java java /opt/jdk1.6.0_43/bin/java 300
+sudo update-alternatives --install /usr/bin/java java /opt/jdk1.7.0_72/bin/java 400
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-7-openjdk-amd64/bin/java 500
+
+sudo update-alternatives --install /usr/bin/javac javac /opt/jdk1.6.0_43/bin/javac 300
+sudo update-alternatives --install /usr/bin/javac javac /opt/jdk1.7.0_72/bin/javac 400
+sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/java-7-openjdk-amd64/bin/javac 500
+</code></pre>
+
+<h4>4).在需要的时候进行手动切换即可</h4>
+
+<pre><code>sudo update-alternatives --config java
+sudo update-alternatives --config javac
+</code></pre>
+
+<p>显示结果如下:
+```bash
+apar@G470 ~ $ sudo update-alternatives &mdash;config java
+[sudo] password for apar:
+有 3 个候选项可用于替换 java (提供 /usr/bin/java)。</p>
+
+<h2>  选择       路径                                      优先级  状态</h2>
+
+<p>  0            /usr/lib/jvm/java-7-openjdk-amd64/bin/java   500       自动模式
+  1            /opt/jdk1.6.0_43/bin/java                    300       手动模式
+* 2            /opt/jdk1.7.0_72/bin/java                    400       手动模式
+  3            /usr/lib/jvm/java-7-openjdk-amd64/bin/java   500       手动模式</p>
+
+<p>要维持当前值[*]请按回车键，或者键入选择的编号：</p>
+
+<p>apar@G470 ~ $ sudo update-alternatives &mdash;config javac
+有 3 个候选项可用于替换 javac (提供 /usr/bin/javac)。</p>
+
+<h2>  选择       路径                                       优先级  状态</h2>
+
+<p>  0            /usr/lib/jvm/java-7-openjdk-amd64/bin/javac   500       自动模式
+  1            /opt/jdk1.6.0_43/bin/javac                    300       手动模式
+* 2            /opt/jdk1.7.0_72/bin/javac                    400       手动模式
+  3            /usr/lib/jvm/java-7-openjdk-amd64/bin/javac   500       手动模式</p>
+
+<p>要维持当前值[*]请按回车键，或者键入选择的编号：
+```</p>
+
+<p>在需要的时候根据显示的结果进行选择切换即可，注意java跟javac要对应的切换！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Markdown Editor——haroopad]]></title>
